@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #F8F9FA;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: #0A2540;
+    color: #D4AF37;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav a {
+    color: #A1A1A1;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.header nav a.active {
+    color: #F8F9FA;
+    font-weight: bold;
+}
+.points {
+    background: #122D49;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+}
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.progress-bar {
+    background: #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+.progress {
+    background: linear-gradient(90deg, #D4AF37, #E6C65C);
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+.button {
+    background: linear-gradient(90deg, #D4AF37, #E6C65C);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #0A2540;
+    font-weight: bold;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.table th, .table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.table th {
+    background: #0A2540;
+    color: #D4AF37;
+}

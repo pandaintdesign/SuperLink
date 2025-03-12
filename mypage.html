@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="./css/mypage.css">
+</head>
+<body>
+
+    <!-- 헤더 -->
+    <div class="header">
+        <div class="logo">슈퍼링크</div>
+        <div class="nav-menu">
+            <a href="#">홈</a>
+            <a href="#">블로그 모집 신청</a>
+            <a href="#">진행 현황</a>
+            <a href="#">마이페이지</a>
+        </div>
+        <div class="points">P 10,000</div>
+    </div>
+
+    <!-- 마이페이지 제목 -->
+    <div class="page-title">마이페이지</div>
+
+    <!-- 프로필 카드 -->
+    <div class="profile-card">
+        <div class="profile-picture">A</div>
+        <div class="profile-info">
+            <p><strong>홍길동님</strong></p>
+            <p>A기업 | 마케팅 담당자</p>
+            <p>가입일: 2025.01.15</p>
+            <p>이메일: hong@example.com</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn">회원정보 수정</button>
+            <button class="btn">비밀번호 변경</button>
+            <button class="btn btn-primary">포인트 충전</button>
+        </div>
+    </div>
+
+    <!-- 포인트 및 캠페인 카드 -->
+    <div class="card-container">
+        <div class="card point-card">
+            <div class="card-title">현재 보유 포인트</div>
+            <h2>10,000 P</h2>
+        </div>
+        <div class="card campaign-card">
+            <div class="card-title">캠페인 현황</div>
+            <div class="campaign-data">
+                <span>진행 중</span><span>3</span>
+            </div>
+            <div class="campaign-data">
+                <span>완료된 캠페인</span><span>12</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 탭 네비게이션 -->
+    <div class="tabs">
+        <div class="tab active">캠페인 내역</div>
+        <div class="tab">충전/결제 내역</div>
+        <div class="tab">문의 내역</div>
+    </div>
+
+    <!-- 캠페인 리스트 -->
+    <div class="campaign-table">
+        <div class="table-header">
+            <span>캠페인명</span>
+            <span>기간</span>
+            <span>상태</span>
+        </div>
+        <div class="table-row">
+            <span>A 브랜드 캠페인</span>
+            <span>2/15~2/28</span>
+            <span class="status active">진행중</span>
+        </div>
+    </div>
+
+</body>
+</html>
