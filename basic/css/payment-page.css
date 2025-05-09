@@ -1,0 +1,65 @@
+      body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffffff, #f7faff);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066ff;
+        }
+        .pricing {
+            background: linear-gradient(135deg, #0040aa, #0080ff);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .price-box {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 10px;
+            opacity: 0.9;
+        }
+        .balance {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .payment-options {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #0066ff, #00ccff);
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }

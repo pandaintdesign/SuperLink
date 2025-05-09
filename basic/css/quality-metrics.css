@@ -1,0 +1,80 @@
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #ffffff, #f7faff);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #ffffff;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #0066ff;
+        }
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 16px;
+        }
+        .nav a.active {
+            font-weight: bold;
+            color: #0066ff;
+        }
+        .points {
+            background: #f0f7ff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 1px solid #0066ff;
+            color: #0066ff;
+            font-size: 14px;
+        }
+        .container {
+            width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        .content-box {
+            background: #f7faff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: #0066ff;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background: #0055cc;
+        }
