@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>슈퍼링크 - 블로거 모집</title>
-    <link rel="stylesheet" href="./css/home.css">
-</head>
-<body>
-
-    <div class="header">슈퍼링크</div>
-
-    <!-- 네비게이션 -->
-    <div class="nav">
-        <a href="#">홈</a>
-        <a href="#">블로그 모집 신청</a>
-        <a href="#">진행 현황</a>
-        <a href="#" class="active">마이페이지</a>
-        <a href="#" class="cta-button">로그인</a>
-    </div>
+    <link rel="stylesheet" href="./css/command.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <a href=""><div id="logo" class="logo">슈퍼링크</div></a>
+      <nav id="topMenu" class="topMenu">
+        <ul>
+          <li><a href="#">블로그 모집 신청</a></li>
+          <li><a href="#">진행현황</a></li>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#" id="login" class="login">로그인</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- 메인 배너 -->
-    <div class="banner">
-        <h1>광고보다 강력한 마케팅,</h1>
-        <h2>상위노출 체험단</h2>
-        <p>리얼 후기 블로거, 단 5분이면 모집완료</p>
-        <a href="#" class="cta-button">블로거 모집 시작하기</a>
-    </div>
-
-    <!-- 주요 기능 -->
-    <div class="features">
-        <h2>리뷰, 이젠 단순 후기 남기는 시대 끝!</h2>
-        <p>광고가 아닌 상위 노출로 키워드를 장악하라!</p>
-        <div class="feature-box">
-            <div class="feature">
-                <div class="feature-circle">AI</div>
-                <div class="feature-title">AI 기반 블로거 자동 매칭</div>
-                <div class="feature-description">나의 상품에 적합한 블로거로 매칭</div>
-            </div>
-            <div class="feature">
-                <div class="feature-circle">SEO</div>
-                <div class="feature-title">상위노출 블로그 포스팅</div>
-                <div class="feature-description">SEO 최적화된 블로거를 통한 맞춤 상위노출</div>
-            </div>
-            <div class="feature">
-                <div class="feature-circle">QC</div>
-                <div class="feature-title">완벽한 리뷰 퀄리티 컨트롤</div>
-                <div class="feature-description">체험 후 자연스럽고 설득력 있는 후기 확보</div>
-            </div>
+    <section id="contents" class="contents">
+      <div class="mainBanner">
+        <a href="#">
+          <div class="banner1">
+            <h1 class="mainTitle">광고보다 강력한 마케팅,</h1>
+            <h3>상위노출 체험단</h3>
+            <p>리얼 후기 블로거, 단 5분이면 모집완료</p>
+          </div>
+        </a>
+      </div>
+      <div class="firstSection">
+        <div class="title">
+          <h2>리뷰, 이젠 단순 후기 남기는 시대는 끝!</h2>
+          <p>광고가 아닌 상위 노출 키워드를 장악하라!</p>
         </div>
-    </div>
-
-    <!-- 모집 절차 -->
-    <div class="steps">
-        <h2>5 Step으로 끝나는 체험단 모집 프로세스</h2>
-        <div class="step-box">
-            <div class="step">
-                <div class="step-circle">1</div>
-                <div class="step-title">블로거 모집</div>
-            </div>
-            <div class="step">
-                <div class="step-circle">2</div>
-                <div class="step-title">블로거 선정 & 제품 발송</div>
-            </div>
-            <div class="step">
-                <div class="step-circle">3</div>
-                <div class="step-title">체험 후 포스팅 업로드</div>
-            </div>
-            <div class="step">
-                <div class="step-circle">4</div>
-                <div class="step-title">포스팅 퀄리티 분석 & 상위 노출 추적</div>
-            </div>
-            <div class="step">
-                <div class="step-circle">5</div>
-                <div class="step-title">데이터 대시보드 제공</div>
-            </div>
+        <div class="checkPart">
+          <ul>
+            <li>
+              <p class="partTitle">AI기반 블로거 자동 매칭</p>
+              <p>나의 상품에 적합한 블로거로 매칭</p>
+            </li>
+            <li>
+              <p class="partTitle">상위노출 블로그 포스팅</p>
+              <p>SEO 최적화 된 블로거를 통한 맞춤 상위 노출</p>
+            </li>
+            <li>
+              <p class="partTitle">완벽한 리뷰 퀄리티 컨트롤</p>
+              <p>체험 후 자연스럽고 설득력 있는 후기 확보</p>
+            </li>
+          </ul>
         </div>
-    </div>
+        <div class="secondSection">
+          <div class="title">
+            <h2>5step으로 끝나는 체험단 모집 프로세스</h2>
+            <p>체계적인 5단계로 고퀄리티의 포스팅 노출</p>
+            <div class="checkPart">
+              <ul>
+                <li>블로거 모집</li>
+                <li>블로거 선정 & 제품 발송</li>
+                <li>체험 후 포스팅 업로드</li>
+                <li>포스팅 퀄리티 분석 & 상위 노출 추적</li>
+                <li>데이터 대시보드 제공</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- 푸터 -->
-    <div class="footer">© 2025 슈퍼링크 | 사업자 등록번호: 000-00-00000 | 서울특별시 강남구</div>
+    <footer id="footer" class="footer">
+      <div id="footer-wrap" class="footer-wrap">
+        <address class="footer-contact">
+          <ul>
+            <li>Superlink</li>
+            <li>000-0000-0000</li>
+            <li>서울특별시 금천구 가산디지털 1로 181 가산W센터 17층 1709호</li>
+            <li>000-00-000</li>
+          </ul>
+        </address>
 
-</body>
+        <div class="footer-copy">
+          <small>&copy; 2025 superlink Co. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

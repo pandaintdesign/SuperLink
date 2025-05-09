@@ -1,150 +1,57 @@
-body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #F8F9FA, #F0F2F5);
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .header {
-            background: #0A2540;
-            color: #D4AF37;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .nav {
-            display: flex;
-            justify-content: space-around;
-            padding: 15px;
-            background: #0A2540;
-            color: #F8F9FA;
-            border-radius: 10px;
-        }
-        .nav a {
-            text-decoration: none;
-            color: #A1A1A1;
-            font-size: 16px;
-            padding: 10px;
-        }
-        .nav a.active {
-            color: #D4AF37;
-            font-weight: bold;
-        }
-        .banner {
-            background: linear-gradient(135deg, #0A2540, #143A5A);
-            color: white;
-            padding: 50px;
-            text-align: center;
-            margin: 20px 0;
-            border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .banner h1 {
-            font-size: 40px;
-        }
-        .banner h2 {
-            font-size: 30px;
-            color: #D4AF37;
-        }
-        .banner p {
-            font-size: 20px;
-            color: #A1A1A1;
-        }
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #D4AF37, #E6C65C);
-            color: #0A2540;
-            padding: 15px 30px;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 30px;
-            margin-top: 20px;
-            text-decoration: none;
-        }
-        .features {
-            text-align: center;
-            margin: 50px 0;
-        }
-        .features h2 {
-            font-size: 36px;
-            color: #0A2540;
-        }
-        .feature-box {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-        .feature {
-            text-align: center;
-            max-width: 300px;
-        }
-        .feature-circle {
-            width: 80px;
-            height: 80px;
-            background: #0A2540;
-            color: #D4AF37;
-            font-size: 30px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin: 0 auto;
-        }
-        .feature-title {
-            font-size: 20px;
-            margin-top: 15px;
-            color: #0A2540;
-        }
-        .feature-description {
-            font-size: 16px;
-            color: #143A5A;
-        }
-        .steps {
-            text-align: center;
-            margin: 50px 0;
-        }
-        .steps h2 {
-            font-size: 36px;
-            color: #0A2540;
-        }
-        .step-box {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-        .step {
-            text-align: center;
-            max-width: 180px;
-        }
-        .step-circle {
-            width: 60px;
-            height: 60px;
-            background: #0A2540;
-            color: #D4AF37;
-            font-size: 24px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin: 0 auto;
-        }
-        .step-title {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #143A5A;
-        }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
+/* header(헤더) */
+
+
+.header {
+    max-width: 100%;
+    max-height: 120px;
+    border-bottom: 1px solid #00FFD4;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header .logo {
+    width: 300px;
+    height: 80px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+
+.header .topMenu {
+    width: 530px;
+    background-color: #ccc;
+}
+
+.header .topMenu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .topMenu ul li {
+    width: 150px;
+    border: 1px solid red;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header .topMenu ul li a {
+    color: #000;
+}
+
+.header .topMenu ul li .login {
+    width: 100px !important;
+    border: 1px solid red;
+}
+
+
+.mainTitle {
+    font-size: 60px;
+    font-weight: 900;
+}
