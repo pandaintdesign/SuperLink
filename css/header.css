@@ -1,0 +1,68 @@
+/* header(헤더) */
+
+.header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 5px solid #00FFD4;
+
+}
+
+.header .home {
+    display: block;
+    padding: 20px 60px;
+}
+
+.header .logo {
+    width: 300px;
+    height: 80px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+.header .topMenu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.header .topMenu ul li {
+    width: 120px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header .topMenu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header .topMenu ul li a:hover {
+    transform: 0.3s;
+    font-weight: 600;
+}
+
+.header .topMenu ul li .login {
+    border-radius: 50px;
+    background-color: #00FFD4;
+}
+
+
+.header .topMenu ul li .login:hover {
+    background-color: #24EDCB;
+}

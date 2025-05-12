@@ -1,57 +1,128 @@
-/* header(헤더) */
+/* 컨텐츠 영역 */
 
-
-.header {
-    max-width: 100%;
-    max-height: 120px;
-    border-bottom: 1px solid #00FFD4;
-    padding: 60px;
-    display: flex;
-    justify-content: space-between;
+.contents {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 100%;
 }
 
-
-.header .logo {
-    width: 300px;
-    height: 80px;
-    background-image: url(../img/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-}
-
-
-.header .topMenu {
-    width: 530px;
-    background-color: #ccc;
-}
-
-.header .topMenu ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header .topMenu ul li {
-    width: 150px;
-    border: 1px solid red;
-    padding: 30px 0;
+.contents .mainBanner {
+    width: 100%;
+    max-height: 655px;
     text-align: center;
-    font-size: 18px;
-    font-weight: 500;
 }
 
-.header .topMenu ul li a {
+
+.contents .mainBanner .banner1 {
+    display: block;
+    height: 655px;
+    background-image: url(../img/main_background01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contents .mainBanner .banner1 .bannerText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+
+.contents .mainBanner .banner1 .bannerText .mainTitle {
+    padding: 0 0 20px 0;
+    font-weight: 800;
+    color: var(--pointColor);
+}
+
+.contents .mainBanner .banner1 .bannerText .subTitle {
+    padding: 0 0 20px 0;
+    font-size: var(--mediumTitle);
+}
+
+.contents .mainBanner .banner1 .bannerText p {
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.contents .mainBanner .banner1 .bannerText p {
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.contents .mainBanner .banner1 .bannerText .mainBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    margin: 25px 0;
+    background-color: var(--pointColor);
+    border-radius: 50px;
     color: #000;
 }
 
-.header .topMenu ul li .login {
-    width: 100px !important;
-    border: 1px solid red;
+
+/* 메인영역 끝 */
+
+.firstSection,
+.secondSection {
+    padding: 120px 0;
 }
 
 
-.mainTitle {
-    font-size: 60px;
-    font-weight: 900;
+.firstSection .title,
+.secondSection .title {
+    text-align: center;
+}
+
+
+.sectionTitle {
+    font-size: var(--mediumTitle);
+    font-weight: 600;
+
+}
+
+
+.secondSection {
+    background-color: #24EDCB;
+}
+
+
+.firstSection .checkPart,
+.secondSection .checkPart {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.firstSection .checkPart ul,
+.secondSection .checkPart ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    padding: 60px 0 0 0;
+    text-align: center;
+    border: 1px solid red;
+
+}
+
+.firstSection .checkPart ul li {
+    border: 1px solid red;
+    width: 100%;
+    height: 400px;
+}
+
+
+.firstSection .checkPart ul .review01::after {
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/section01.png);
 }
