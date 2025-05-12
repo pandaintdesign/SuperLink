@@ -1,59 +1,47 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>로그인 페이지</title>
-    <link rel="stylesheet" href="./css/login-page.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/command.css" />
+    <link rel="stylesheet" href="./css/login-page.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
     <!-- 헤더 -->
-    <div class="header">
-        <div class="logo">슈퍼링크</div>
-        <div class="nav-menu">
-            <a href="#">홈</a>
-            <a href="#">블로그 모집 신청</a>
-            <a href="#">진행 현황</a>
-            <a href="#">마이페이지</a>
-        </div>
-        <button class="login-btn">로그인</button>
-    </div>
+    <div id="header"></div>
 
     <!-- 로그인 폼 -->
     <div class="login-container">
-        <div class="login-header">로그인</div>
-        <div class="login-content">
-            <p>상위노출 체험단 플랫폼에 오신 것을 환영합니다!</p>
-            <p>계정 정보를 입력하여 로그인해 주세요.</p>
+      <div class="login-header">로그인</div>
+      <div class="login-content">
+        <p>상위노출 체험단 플랫폼에 오신 것을 환영합니다!</p>
+        <p>계정 정보를 입력하여 로그인해 주세요.</p>
 
-            <input type="text" class="input-box" placeholder="아이디 또는 이메일">
-            <input type="password" class="input-box" placeholder="비밀번호">
+        <input type="text" class="input-box" placeholder="아이디 또는 이메일" />
+        <input type="password" class="input-box" placeholder="비밀번호" />
 
-            <div class="remember-me">
-                <label><input type="checkbox"> 로그인 상태 유지</label>
-                <a href="#" style="color: #0A2540;">비밀번호를 잊으셨나요?</a>
-            </div>
-
-            <button class="login-button">로그인</button>
-
-            <div class="signup-link">
-                <p>아직 회원이 아니신가요? <a href="#">회원가입하기</a></p>
-            </div>
+        <div class="remember-me">
+          <label><input type="checkbox" /> 로그인 상태 유지</label>
+          <a href="#" style="color: #0a2540">비밀번호를 잊으셨나요?</a>
         </div>
+
+        <button class="login-button">로그인</button>
+
+        <div class="signup-link">
+          <p>아직 회원이 아니신가요? <a href="#">회원가입하기</a></p>
+        </div>
+      </div>
     </div>
 
     <!-- 푸터 -->
-    <div class="footer">
-        <div class="footer-text">
-            <strong>슈퍼링크</strong><br>
-            사업자 등록번호: 000-00-00000<br>
-            주소: 서울특별시 강남구
-        </div>
-        <div class="footer-text">
-            <a href="#">이용약관</a> | <a href="#">개인정보처리방침</a>
-        </div>
-    </div>
 
-</body>
+    <!-- 푸터 -->
+    <div id="footer"></div>
+
+    <!-- JS -->
+    <script src="js/include.js"></script>
+  </body>
 </html>
