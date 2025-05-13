@@ -1,0 +1,41 @@
+.footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+}
+
+
+.footer .footer-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: #fff;
+}
+
+
+.footer .footer-wrap .footer-logo {
+    width: 300px;
+    height: 80px;
+    padding: 0 90px 0 20px;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+
+.footer .footer-wrap .footer-contact {
+    font-style: normal;
+    color: #ccc;
+}
+
+
+.footer .footer-wrap .footer-contact ul li {
+    font-size: 14px;
+    line-height: 24px;
+
+}
