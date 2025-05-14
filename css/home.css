@@ -8,7 +8,7 @@
 
 .contents .mainBanner {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: 120px;
     width: 100%;
     max-height: 655px;
@@ -17,8 +17,9 @@
 
 
 .contents .mainBannerSpacer {
-    height: 800px;
-    z-index: -10;
+    position: relative;
+    width: 100%;
+    height: 770px;
 }
 
 .contents .mainBanner .banner1 {
@@ -41,6 +42,7 @@
 
 .contents .mainBanner .banner1 .bannerText .mainTitle {
     padding: 0 0 20px 0;
+    font-family: 'Pretendard';
     font-weight: 800;
     color: var(--pointColor);
 }
@@ -55,11 +57,6 @@
     font-weight: 400;
 }
 
-.contents .mainBanner .banner1 .bannerText p {
-    line-height: 30px;
-    font-weight: 400;
-}
-
 .contents .mainBanner .banner1 .bannerText .mainBtn {
     display: flex;
     justify-content: center;
@@ -67,11 +64,14 @@
     width: 300px;
     height: 50px;
     margin: 25px 0;
+    font-family: 'Pretendard';
     font-weight: 600;
     background-color: var(--pointColor);
     border-radius: 50px;
     color: #000;
 }
+
+
 
 
 /* 메인영역 끝 */
@@ -88,16 +88,16 @@
 }
 
 
-.firstSection .title p,
-.secondSection .title p {
-    margin-top: 30px;
+.firstSection .title h2,
+.secondSection .title h2 {
+    font-size: var(--mediumTitle);
+    font-weight: 800;
 }
 
 
-.sectionTitle {
-    font-size: var(--mediumTitle);
-    font-weight: 600;
-
+.firstSection .title p,
+.secondSection .title p {
+    margin-top: 30px;
 }
 
 
