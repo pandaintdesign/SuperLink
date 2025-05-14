@@ -1,0 +1,101 @@
+.login-box {
+    height: 800px;
+}
+
+
+.login-box .login-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 440px;
+    height: 498px;
+    padding: 40px;
+}
+
+.login-box .login-wrap .login-title {
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+
+.login-box .login-wrap .login-title p {
+    line-height: 30px;
+}
+
+.login-box .login-wrap .login-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box .login-wrap .login-input .writeBoxlabel {
+    text-indent: -9999px;
+}
+
+.login-box .login-wrap .login-input input {
+    height: 50px;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.rememberID {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* 요소들 사이에 공간 분배 */
+    flex-wrap: nowrap;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* 체크박스와 라벨을 감싸는 컨테이너 */
+.rememberID .checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.rememberID input[type="checkbox"] {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.rememberID .checkbox-container label {
+    width: 200px;
+    margin: 0 10px;
+    color: #000;
+    font-size: 14px;
+}
+
+.rememberID a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    white-space: nowrap;
+    /* 링크 텍스트가 줄바꿈되지 않도록 */
+}
+
+.login-box .login-wrap .login-input .loginkey {
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--pointColor);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.login-box .login-wrap .joinUrl {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.login-box .login-wrap .joinUrl a {
+    padding: 3px 5px;
+    color: #000;
+}
