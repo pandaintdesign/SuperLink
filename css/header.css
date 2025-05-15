@@ -2,11 +2,12 @@
 
 .header {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 9999;
     width: 100%;
     max-width: 1920px;
     height: 120px;
-    /* ✅ 고정된 높이만 지정 */
     display: flex;
     justify-content: space-between;
     align-items: center;
