@@ -1,81 +1,112 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>마이페이지</title>
-    <link rel="stylesheet" href="./css/mypage.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/command.css" />
+    <link rel="stylesheet" href="./css/mypage.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
     <!-- 헤더 -->
-    <div class="header">
-        <div class="logo">슈퍼링크</div>
-        <div class="nav-menu">
-            <a href="#">홈</a>
-            <a href="#">블로그 모집 신청</a>
-            <a href="#">진행 현황</a>
-            <a href="#">마이페이지</a>
-        </div>
-        <div class="points">P 10,000</div>
-    </div>
+    <div id="header"></div>
 
-    <!-- 마이페이지 제목 -->
-    <div class="page-title">마이페이지</div>
+    <section id="mypage" class="mypage">
+      <div class="mypage-wrap">
+        <h3>마이페이지</h3>
+        <div class="userProfile">
+          <h4 class="userName">
+            안녕하세요! <span class="nameArea">홍길동님!</span>
+          </h4>
+          <div class="editArea">
+            <ul class="userData">
+              <li class="listTitle">가입유형</li>
+              <li>기업명 | <span class="company">(주)판다인</span></li>
+              <li>가입일 | <span class="joinDay">0000-00-00</span></li>
+              <li>
+                이메일 | <span class="emailAddress">pandain@pandain.co.kr</span>
+              </li>
+              <li>
+                최근로그인 |
+                <span class="lastLoginDate"
+                  >0000-00-00 <span class="lastLoginTime">00:00:00</span></span
+                >
+              </li>
+            </ul>
+            <ul class="dataEditBtn">
+              <li><a href="#" class="pointCharge">포인트 충전</a></li>
+              <li><a href="#">회원정보 수정</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <!-- 프로필 카드 -->
-    <div class="profile-card">
-        <div class="profile-picture">A</div>
-        <div class="profile-info">
-            <p><strong>홍길동님</strong></p>
-            <p>A기업 | 마케팅 담당자</p>
-            <p>가입일: 2025.01.15</p>
-            <p>이메일: hong@example.com</p>
+        <div class="historyBtn">
+          <ul>
+            <li><button type="button">캠페인 내역</button></li>
+            <li><button type="button">충전/ 결제 내역</button></li>
+            <li><button type="button">문의 내역</button></li>
+          </ul>
         </div>
-        <div class="btn-container">
-            <button class="btn">회원정보 수정</button>
-            <button class="btn">비밀번호 변경</button>
-            <button class="btn btn-primary">포인트 충전</button>
-        </div>
-    </div>
 
-    <!-- 포인트 및 캠페인 카드 -->
-    <div class="card-container">
-        <div class="card point-card">
-            <div class="card-title">현재 보유 포인트</div>
-            <h2>10,000 P</h2>
+        <div class="historyList">
+          <table class="historyTable">
+            <thead class="historyColumn">
+              <th>캠페인 명</th>
+              <th>기간</th>
+              <th class="moreView"><a href="">더보기&gt;</a></th>
+            </thead>
+            <tbody class="historyRow">
+              <tr class="rowLine">
+                <td class="campeinName">A브랜드 캠페인</td>
+                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
+                <td class="moreViewBtn">
+                  <span class="stateDot redDot">진행예정</span>
+                </td>
+              </tr>
+              <tr class="rowLine">
+                <td class="campeinName">A브랜드 캠페인</td>
+                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
+                <td class="moreViewBtn">
+                  <span class="stateDot yellowDot">진행중</span>
+                </td>
+              </tr>
+              <tr class="rowLine">
+                <td class="campeinName">A브랜드 캠페인</td>
+                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
+                <td class="moreViewBtn">
+                  <span class="stateDot greenDot">진행완료</span>
+                </td>
+              </tr>
+              <tr class="rowLine">
+                <td class="campeinName">A브랜드 캠페인</td>
+                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
+                <td class="moreViewBtn">
+                  <span class="stateDot greyDot">보류</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="card campaign-card">
-            <div class="card-title">캠페인 현황</div>
-            <div class="campaign-data">
-                <span>진행 중</span><span>3</span>
-            </div>
-            <div class="campaign-data">
-                <span>완료된 캠페인</span><span>12</span>
-            </div>
+        <div class="pageBtn">
+          <ul>
+            <li><button type="button" class="pgClick">&lt;</button></li>
+            <li><button type="button" class="pgClick">1</button></li>
+            <li><button type="button" class="pgClick">2</button></li>
+            <li><button type="button" class="pgClick">3</button></li>
+            <li><button type="button" class="pgClick">4</button></li>
+            <li><button type="button" class="pgClick">5</button></li>
+            <li><button type="button" class="pgClick">&gt;</button></li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- 탭 네비게이션 -->
-    <div class="tabs">
-        <div class="tab active">캠페인 내역</div>
-        <div class="tab">충전/결제 내역</div>
-        <div class="tab">문의 내역</div>
-    </div>
-
-    <!-- 캠페인 리스트 -->
-    <div class="campaign-table">
-        <div class="table-header">
-            <span>캠페인명</span>
-            <span>기간</span>
-            <span>상태</span>
-        </div>
-        <div class="table-row">
-            <span>A 브랜드 캠페인</span>
-            <span>2/15~2/28</span>
-            <span class="status active">진행중</span>
-        </div>
-    </div>
-
-</body>
+    <!-- 푸터 -->
+    <div id="footer"></div>
+    <!-- JS -->
+    <script src="js/include.js"></script>
+  </body>
 </html>

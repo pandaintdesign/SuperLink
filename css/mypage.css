@@ -1,220 +1,243 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+    .mypage {
+        position: relative;
+        min-height: 100vh;
+        height: auto;
+    }
 
-        body {
-            background: linear-gradient(to bottom right, #ffffff, #f7faff);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
 
-        /* 헤더 스타일 */
-        .header {
-            width: 100%;
-            height: 80px;
-            background-color: #ffffff;
-            display: flex;
-            align-items: center;
-            padding: 0 50px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            justify-content: space-between;
-        }
+    .mypage .mypage-wrap {
+        position: relative;
+        margin: 120px auto;
+        padding: 120px 0;
+        width: 1200px;
+    }
 
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #0066ff;
-        }
 
-        .nav-menu {
-            display: flex;
-            gap: 30px;
-        }
+    .mypage .mypage-wrap h3 {
+        text-align: center;
+        font-weight: 800;
 
-        .nav-menu a {
-            color: #333333;
-            font-size: 16px;
-            text-decoration: none;
-        }
+    }
 
-        .points {
-            background: #f0f7ff;
-            padding: 10px 20px;
-            border-radius: 20px;
-            border: 1px solid #0066ff;
-            color: #0066ff;
-            font-weight: bold;
-        }
+    .userName {
+        margin: 60px 0 0 0;
+        font-size: 24px;
+        font-weight: 400;
+    }
 
-        /* 마이페이지 제목 */
-        .page-title {
-            font-size: 28px;
-            font-weight: bold;
-            color: #333333;
-            margin: 30px 0;
-        }
+    .userName .nameArea {
+        font-weight: 700;
+    }
 
-        /* 프로필 카드 */
-        .profile-card {
-            width: 900px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            display: flex;
-            align-items: center;
-        }
+    .editArea {
+        display: flex;
+        justify-content: space-between;
+        width: 1140px;
+        height: 250px;
+        margin: 20px 0 0 0;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
 
-        .profile-picture {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: #f0f7ff;
-            border: 2px solid #0066ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 36px;
-            font-weight: bold;
-            color: #0066ff;
-        }
+    .editArea .userData,
+    .editArea .dataEditBtn {
+        width: calc(100%/2);
+        padding: 20px 30px;
+    }
 
-        .profile-info {
-            margin-left: 20px;
-            flex-grow: 1;
-        }
+    .editArea .userData {
+        border-right: 1px solid #ccc;
+    }
 
-        .profile-info p {
-            font-size: 16px;
-            color: #666666;
-        }
 
-        .btn-container {
-            display: flex;
-            gap: 10px;
-        }
+    .editArea .userData li {
+        font-size: 18px;
+        line-height: 36px;
+    }
 
-        .btn {
-            padding: 10px 15px;
-            border-radius: 5px;
-            border: 1px solid #0066ff;
-            background: #f0f7ff;
-            color: #0066ff;
-            font-size: 14px;
-            cursor: pointer;
-        }
+    .editArea .userData .listTitle {
+        margin: 0 0 20px 0;
+        padding: 0 0 20px 0;
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 1px solid #000;
+    }
 
-        .btn-primary {
-            background: linear-gradient(to right, #0066ff, #00ccff);
-            color: white;
-        }
+    .editArea .dataEditBtn li {
+        width: 100%;
+        height: 60px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
 
-        /* 포인트 및 캠페인 카드 */
-        .card-container {
-            display: flex;
-            gap: 20px;
-            margin-top: 30px;
-        }
+    .editArea .dataEditBtn li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        color: #000;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
 
-        .card {
-            width: 430px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+    .editArea .dataEditBtn .pointCharge {
+        font-weight: 700;
+        background-color: var(--pointColor);
+        border-radius: 10px;
+    }
 
-        .point-card {
-            background: linear-gradient(to bottom right, #0050cc, #0080ff);
-            color: white;
-        }
 
-        .campaign-card {
-            background: #ffffff;
-        }
+    .historyBtn {
+        width: 100%;
+        height: 120px;
+    }
 
-        .card-title {
-            font-size: 18px;
-            font-weight: bold;
-        }
+    .historyBtn ul {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        padding: 120px 0 0 0;
+    }
 
-        .campaign-data {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-            color: #555555;
-        }
 
-        .campaign-data span {
-            font-weight: bold;
-        }
+    .historyBtn ul li {
+        width: 140px;
+        text-align: center;
+        background-color: var(--pointColor);
+        border-radius: 10px;
+    }
 
-        /* 탭 네비게이션 */
-        .tabs {
-            width: 900px;
-            margin-top: 40px;
-            background: #ffffff;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            gap: 15px;
-        }
 
-        .tab {
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 16px;
-            background: #f0f7ff;
-            color: #0066ff;
-        }
+    .historyBtn ul li button {
+        width: 140px;
+        padding: 10px 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
 
-        .tab.active {
-            background: #0066ff;
-            color: white;
-        }
 
-        /* 캠페인 리스트 */
-        .campaign-table {
-            width: 900px;
-            margin-top: 30px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
+    .historyBtn ul li button:hover {
+        font-weight: 600;
+        background-color: #24EDCB;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
 
-        .table-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            color: #333333;
-        }
 
-        .table-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #eeeeee;
-            color: #333333;
-        }
+    .historyList {
+        padding: 90px 0 0 0;
+    }
 
-        .status {
-            padding: 5px 10px;
-            border-radius: 12px;
-            font-size: 12px;
-        }
 
-        .status.active {
-            background: #e6f7ff;
-            color: #0099ff;
-        }
+    .historyTable {
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
 
-        .status.ended {
-            background: #f0f0f0;
-            color: #666666;
-        }
+    .historyTable .historyColumn {
+        padding: 20px 0;
+    }
+
+    .historyTable .historyColumn th {
+        font-weight: 400;
+        padding: 20px 0;
+
+        border-bottom: 1px solid #ccc;
+    }
+
+    .historyTable .moreView {
+        text-align: right;
+    }
+
+
+    .historyTable .historyRow .rowLine td {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+
+    .historyTable .historyRow .rowLine .moreViewBtn {
+        padding: 5px 20px;
+        text-align: right;
+    }
+
+    .historyTable .historyRow .rowLine .moreViewBtn .stateDot {
+        display: inline-block;
+        width: 60px;
+        padding: 5px 10px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+
+    .historyTable .historyRow .rowLine .moreViewBtn .redDot {
+        background-color: #FFB5B5;
+        border: 1px solid #c91619;
+        color: #c91619;
+    }
+
+    .historyTable .historyRow .rowLine .moreViewBtn .yellowDot {
+        background-color: #FFF47C;
+        border: 1px solid #F48E00;
+        color: #F48E00;
+    }
+
+    .historyTable .historyRow .rowLine .moreViewBtn .greenDot {
+        background-color: #C4FFB5;
+        border: 1px solid #49AA5E;
+        color: #49AA5E;
+    }
+
+    .historyTable .historyRow .rowLine .moreViewBtn .greyDot {
+        background-color: #ddd;
+        border: 1px solid #777;
+        color: #777;
+    }
+
+
+    .pageBtn {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 270px;
+        padding: 20px;
+
+    }
+
+    .pageBtn ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    .pageBtn ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        font-weight: 400;
+        color: #777;
+        border: 1px solid #ccc;
+    }
+
+    .pageBtn ul li .pgClick {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .pageBtn ul li .pgClick:hover {
+        background: var(--pointColor);
+    }
