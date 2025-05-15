@@ -1,0 +1,225 @@
+    .campaign-detail {
+        position: relative;
+        min-height: 100vh;
+        height: auto;
+    }
+
+
+    .campaign-detail .campaign-detail-wrap {
+        position: relative;
+        margin: 120px auto;
+        padding: 120px 0;
+        width: 1200px;
+    }
+
+
+    .campaign-detail .campaign-detail-wrap h3 {
+        text-align: center;
+        font-weight: 800;
+
+    }
+
+    .subTitle {
+        margin: 60px 0 0 0;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .userName span {
+        font-weight: 700;
+    }
+
+    .stateBox {
+        display: flex;
+        justify-content: space-between;
+
+        gap: 50px;
+    }
+
+    .stateList {
+        width: 30%;
+        height: 250px;
+        margin: 20px 0 0 0;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .stateList ul {
+        height: 100%;
+    }
+
+    .stateList ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: calc(100%/4);
+    }
+
+    .stateList ul li:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .stateList ul li span {
+        width: 70%;
+        text-align: left;
+    }
+
+
+    .stateCount {
+        width: 70%;
+        margin: 20px 0 0 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .stateCount .percentage {
+        min-height: auto;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .stateTitle {
+        font-size: 24px;
+    }
+
+    .stateCount .percentage .stateBar {
+        width: 100%;
+        height: 40px;
+        margin: 20px 0 0 0;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+    }
+
+
+    .stateCount .percentage .stateBar .percentageStick {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .stateCount .posting {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .stateCount .percentage .postingCheck {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0;
+        border: none;
+    }
+
+    .invoice {
+        width: 160px;
+        height: 60px;
+        font-size: var(--text);
+        font-weight: 600;
+        background-color: var(--pointColor);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .invoice:hover {
+        background-color: #24EDCB;
+        transition: 0.3s;
+    }
+
+
+
+    .historyList {
+        padding: 90px 0 0 0;
+    }
+
+
+    .historyTable {
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .historyTable .historyColumn {
+        padding: 20px 0;
+    }
+
+    .historyTable .historyColumn th {
+        font-weight: 400;
+        padding: 20px 0;
+
+        border-bottom: 1px solid #ccc;
+    }
+
+    .historyTable .moreView {
+        text-align: right;
+    }
+
+
+    .historyTable .historyRow .rowLine td {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+
+    .historyTable .historyRow .rowLine .moreViewBtn {
+        padding: 5px 20px;
+        text-align: right;
+    }
+
+    .historyTable .historyRow .rowLine .moreViewBtn .stateDot {
+        display: inline-block;
+        width: 60px;
+        padding: 5px 10px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+
+
+    .pageBtn {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 270px;
+        padding: 20px;
+
+    }
+
+    .pageBtn ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    .pageBtn ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        font-weight: 400;
+        color: #777;
+        border: 1px solid #ccc;
+    }
+
+    .pageBtn ul li .pgClick {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        color: #777;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .pageBtn ul li .pgClick:hover {
+        background: var(--pointColor);
+    }

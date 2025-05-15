@@ -6,14 +6,126 @@
     <title>슈퍼링크 캠페인 진행 현황</title>
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/campaign-detail.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <!-- 헤더 -->
     <div id="header"></div>
 
-    <section></section>
+    <section id="campaign-detail" class="campaign-detail">
+      <div class="campaign-detail-wrap">
+        <h3>진행현황</h3>
+        <div class="subTitle">
+          <h4 class="userName">
+            <span class="brandName">A브랜드</span> |
+            <span class="bloggerCategory">신상품 체험단</span>
+          </h4>
+        </div>
+        <div class="stateBox">
+          <div class="stateList">
+            <ul>
+              <li>
+                진행기간
+                <span class="runningDate"> 0000.00.00 ~ 0000.00.00 </span>
+              </li>
+              <li>모집인원<span class="people">00명</span></li>
+              <li>진행유형<span class="runningType">상품제공형</span></li>
+              <li>카테고리<span class="runningCategory">뷰티</span></li>
+            </ul>
+          </div>
+          <div class="stateCount">
+            <div class="percentage recruitBar">
+              <h4 class="stateTitle">모집현황</h4>
+              <div class="stateBar recruit">
+                <span class="percentageStick">100%</span>
+              </div>
+            </div>
+            <div class="percentage recruitBar">
+              <h4 class="stateTitle">제품발송</h4>
+              <div class="stateBar shipping">
+                <span class="percentageStick">100%</span>
+              </div>
+            </div>
+            <div class="percentage posting">
+              <h4 class="stateTitle">포스팅현황</h4>
+              <div class="stateBar postingCheck">
+                <div class="countPeople">
+                  <p class="postingCount">
+                    완료<span class="finish">3명</span> | 예정
+                    <span class="ready">7명</span>
+                  </p>
+                </div>
+                <button type="button" class="invoice">송장업로드</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="historyList">
+          <table class="historyTable">
+            <thead class="historyColumn">
+              <th>블로거명</th>
+              <th>지수</th>
+              <th>이름</th>
+              <th>전화번호</th>
+              <th>주소</th>
+              <th>택배사</th>
+              <th>송장번호</th>
+            </thead>
+            <tbody class="historyRow">
+              <tr class="rowLine">
+                <td class="bloggerName">블로거A</td>
+                <td class="blogPoint">90</td>
+                <td class="RealUserName">홍길동</td>
+                <td class="phoneNum">000-0000-000</td>
+                <td class="HomeAdress">서울 강남구 학동로 426 강남구청</td>
+                <td class="Courier">CJ대한통운</td>
+                <td class="deliveryCode">0000000000000</td>
+              </tr>
+              <tr class="rowLine">
+                <td class="bloggerName">블로거A</td>
+                <td class="blogPoint">90</td>
+                <td class="RealUserName">홍길동</td>
+                <td class="phoneNum">000-0000-000</td>
+                <td class="HomeAdress">서울 강남구 학동로 426 강남구청</td>
+                <td class="Courier">CJ대한통운</td>
+                <td class="deliveryCode">0000000000000</td>
+              </tr>
+              <tr class="rowLine">
+                <td class="bloggerName">블로거A</td>
+                <td class="blogPoint">90</td>
+                <td class="RealUserName">홍길동</td>
+                <td class="phoneNum">000-0000-000</td>
+                <td class="HomeAdress">서울 강남구 학동로 426 강남구청</td>
+                <td class="Courier">CJ대한통운</td>
+                <td class="deliveryCode">0000000000000</td>
+              </tr>
+              <tr class="rowLine">
+                <td class="bloggerName">블로거A</td>
+                <td class="blogPoint">90</td>
+                <td class="RealUserName">홍길동</td>
+                <td class="phoneNum">000-0000-000</td>
+                <td class="HomeAdress">서울 강남구 학동로 426 강남구청</td>
+                <td class="Courier">CJ대한통운</td>
+                <td class="deliveryCode">0000000000000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pageBtn">
+          <ul>
+            <li><button type="button" class="pgClick">◀</button></li>
+            <li><button type="button" class="pgClick">1</button></li>
+            <li><button type="button" class="pgClick">2</button></li>
+            <li><button type="button" class="pgClick">3</button></li>
+            <li><button type="button" class="pgClick">4</button></li>
+            <li><button type="button" class="pgClick">5</button></li>
+            <li><button type="button" class="pgClick">▶</button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <!-- 푸터 -->
     <div id="footer"></div>
 
