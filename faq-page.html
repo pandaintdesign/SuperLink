@@ -1,75 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ 페이지</title>
-    <link rel="stylesheet" href="./css/faq-page.css">
-   </head>
-<body>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/command.css" />
+    <link rel="stylesheet" href="./css/faq-page.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <div id="header"></div>
 
-    <div class="container">
-        <div class="header">FAQ 페이지</div>
+    <section></section>
+    <!-- 푸터 -->
+    <div id="footer"></div>
 
-        <!-- 네비게이션 -->
-        <div class="nav">
-            <a href="#">캠페인 내역</a>
-            <a href="#">충전/결제 내역</a>
-            <a href="#" class="active">FAQ</a>
-            <a href="#" style="background: linear-gradient(135deg, #0066ff, #00ccff); color: white;">문의하기</a>
-        </div>
-
-        <!-- 검색창 -->
-        <div class="search-bar">
-            <input type="text" placeholder="검색어를 입력하세요">
-            <button>검색</button>
-        </div>
-
-        <!-- FAQ 리스트 -->
-        <div class="faq-list">
-            <div class="faq-item">
-                <div class="faq-question">Q. 블로거 모집은 어떻게 진행되나요?</div>
-                <div class="faq-answer">블로그 모집 신청 페이지에서 캠페인 정보를 입력하고 블로거 조건(카테고리, 방문자 수 등)을 설정한 후 신청하면 자동으로 조건에 맞는 블로거들에게 참여 안내 메일이 발송됩니다.</div>
-                <div class="faq-toggle">+</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Q. 포인트는 어떻게 충전하나요?</div>
-                <div class="faq-answer">포인트는 마이페이지의 충전/결제 내역에서 충전 가능합니다.</div>
-                <div class="faq-toggle">+</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Q. 블로거에게 제품을 어떻게 발송하나요?</div>
-                <div class="faq-answer">캠페인 진행 후 블로거의 주소를 확인한 후 제품을 발송하시면 됩니다.</div>
-                <div class="faq-toggle">+</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Q. 블로거가 포스팅을 완료하면 어떻게 확인하나요?</div>
-                <div class="faq-answer">캠페인 진행 현황에서 블로거의 포스팅 상태를 확인할 수 있습니다.</div>
-                <div class="faq-toggle">+</div>
-            </div>
-        </div>
-
-        <!-- 페이지네이션 -->
-        <div class="pagination">
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>></button>
-        </div>
-    </div>
-
+    <!-- JS -->
+    <script src="js/include.js"></script>
     <script>
-        document.querySelectorAll('.faq-item').forEach(item => {
+      /* document.querySelectorAll('.faq-item').forEach(item => {
             item.addEventListener('click', () => {
                 item.classList.toggle('active');
                 let toggleIcon = item.querySelector('.faq-toggle');
                 toggleIcon.textContent = item.classList.contains('active') ? '-' : '+';
             });
-        });
+        });*/
     </script>
-
-</body>
+  </body>
 </html>

@@ -1,94 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ 및 문의 내역 - 슈퍼링크</title>
-    <link rel="stylesheet" href="./css/inquiry-list.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/command.css" />
+    <link rel="stylesheet" href="./css/inquiry-list.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <div id="header"></div>
 
-    <div class="header">슈퍼링크</div>
+    <section></section>
+    <!-- 푸터 -->
+    <div id="footer"></div>
 
-    <!-- 네비게이션 -->
-    <div class="nav">
-        <a href="#">홈</a>
-        <a href="#">블로그 모집 신청</a>
-        <a href="#">진행 현황</a>
-        <a href="#" class="active">마이페이지</a>
-    </div>
-
-    <div class="container">
-        <div class="content">
-            <div class="title">FAQ</div>
-            <div class="info-text">자주 묻는 질문을 확인해보세요.</div>
-
-            <!-- 탭 네비게이션 -->
-            <div class="tab-navigation">
-                <div class="tab">캠페인 내역</div>
-                <div class="tab">충전/결제 내역</div>
-                <div class="tab active">FAQ</div>
-            </div>
-
-            <!-- FAQ 카테고리 -->
-            <div class="faq-category">
-                <div class="category active">전체</div>
-                <div class="category">캠페인</div>
-                <div class="category">결제</div>
-                <div class="category">블로거</div>
-                <div class="category">서비스</div>
-                <div class="category">기타</div>
-            </div>
-
-            <!-- FAQ 목록 -->
-            <div class="faq-box">
-                <div class="faq-header">Q. 블로거 모집은 어떻게 진행되나요?</div>
-                <div class="faq-content">
-                    블로그 모집 신청 페이지에서 캠페인 정보를 입력하고 블로거 조건을 설정한 후 신청하면 자동으로 블로거들에게 참여 안내 메일이 발송됩니다.
-                </div>
-            </div>
-
-            <div class="faq-box">
-                <div class="faq-header">Q. 포인트는 어떻게 충전하나요?</div>
-                <div class="faq-content">
-                    마이페이지의 결제 내역에서 포인트 충전 버튼을 눌러 원하는 금액을 충전할 수 있습니다.
-                </div>
-            </div>
-
-            <div class="title">문의 내역</div>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>카테고리</th>
-                        <th>문의 제목</th>
-                        <th>등록일</th>
-                        <th>상태</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>5</td>
-                        <td>캠페인</td>
-                        <td>A브랜드 캠페인 블로거 추가 모집 방법 문의</td>
-                        <td>2025.02.25</td>
-                        <td><span class="status pending">대기중</span></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>결제</td>
-                        <td>결제 오류 발생 문의</td>
-                        <td>2025.02.22</td>
-                        <td><span class="status completed">완료</span></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="info-text">
-                문의 사항이 있으시면 <a href="#" class="button">문의하기</a>를 클릭하세요.
-            </div>
-        </div>
-    </div>
-
-</body>
+    <!-- JS -->
+    <script src="js/include.js"></script>
+  </body>
 </html>

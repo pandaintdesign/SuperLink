@@ -1,62 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>충전/결제 내역</title>
-    <link rel="stylesheet" href="./css/payment-history.css">
-</head>
-<body>
-    <div class="header">
-        <div class="logo">슈퍼링크</div>
-        <div class="nav-menu">
-            <a href="#">홈</a>
-            <a href="#">블로그 모집 신청</a>
-            <a href="#">진행 현황</a>
-            <a href="#">마이페이지</a>
-        </div>
-        <div class="points">P 10,000</div>
-    </div>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/command.css" />
+    <link rel="stylesheet" href="./css/payment-history.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <div id="header"></div>
 
-    <div class="page-title">충전/결제 내역</div>
+    <section></section>
+    <!-- 푸터 -->
+    <div id="footer"></div>
 
-    <div class="summary-container">
-        <div class="summary-box">
-            <p>총 충전 포인트</p>
-            <h2>650,000 P</h2>
-        </div>
-        <div class="summary-box">
-            <p>총 사용 포인트</p>
-            <h2>640,000 P</h2>
-        </div>
-        <div class="summary-box">
-            <p>잔여 포인트</p>
-            <h2>10,000 P</h2>
-        </div>
-    </div>
-
-    <div class="transaction-table">
-        <div class="table-header">
-            <span>날짜</span>
-            <span>구분</span>
-            <span>내용</span>
-            <span>포인트</span>
-            <span>결제 방법</span>
-        </div>
-        <div class="table-row">
-            <span>2025.02.15</span>
-            <span class="status charge">충전</span>
-            <span>포인트 충전</span>
-            <span style="color: #22c55e;">+100,000 P</span>
-            <span>신용카드</span>
-        </div>
-        <div class="table-row">
-            <span>2025.02.10</span>
-            <span class="status use">사용</span>
-            <span>A 브랜드 캠페인</span>
-            <span style="color: #ff6666;">-200,000 P</span>
-            <span>포인트</span>
-        </div>
-    </div>
-</body>
+    <!-- JS -->
+    <script src="js/include.js"></script>
+  </body>
 </html>

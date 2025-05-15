@@ -1,77 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>문의하기 - 슈퍼링크</title>
-    <link rel="stylesheet" href="./css/inquiry-form.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/command.css" />
+    <link rel="stylesheet" href="./css/inquiry-form.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <div id="header"></div>
 
-    <div class="header">슈퍼링크</div>
+    <section></section>
+    <!-- 푸터 -->
+    <div id="footer"></div>
 
-    <!-- 네비게이션 -->
-    <div class="nav">
-        <a href="#">홈</a>
-        <a href="#">블로그 모집 신청</a>
-        <a href="#">진행 현황</a>
-        <a href="#" class="active">마이페이지</a>
-    </div>
-
-    <!-- 콘텐츠 영역 -->
-    <div class="container">
-        <div class="content">
-            <div class="title">문의하기</div>
-            <div class="info-text">슈퍼링크 서비스 이용 중 궁금한 점이나 불편한 사항이 있으신가요?<br> 아래 양식을 작성하시면 빠르게 확인 후 답변드리겠습니다.</div>
-
-            <div class="form-box">
-                <div class="form-group">
-                    <label class="form-label">문의 카테고리 <span class="required">* 필수</span></label>
-                    <select class="input-box">
-                        <option>카테고리 선택</option>
-                        <option>일반 문의</option>
-                        <option>계정 문제</option>
-                        <option>결제 관련</option>
-                        <option>기타</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">문의 제목 <span class="required">* 필수</span></label>
-                    <input type="text" class="input-box" placeholder="제목을 입력하세요">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">관련 캠페인</label>
-                    <select class="input-box">
-                        <option>관련 캠페인을 선택하세요 (선택사항)</option>
-                        <option>캠페인 A</option>
-                        <option>캠페인 B</option>
-                        <option>캠페인 C</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">문의 내용 <span class="required">* 필수</span></label>
-                    <textarea class="input-box" rows="6" placeholder="문의 내용을 상세히 작성해 주세요"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">파일 첨부</label>
-                    <input type="file" class="input-box">
-                </div>
-
-                <div class="checkbox-group">
-                    <input type="checkbox">
-                    <label>답변 완료 시 이메일로 알림 받기</label>
-                </div>
-
-                <div class="button">문의 등록하기</div>
-            </div>
-
-            <div class="service-info">평일 09:00~18:00 접수된 문의는 24시간 내 답변을 드리고 있습니다.</div>
-        </div>
-    </div>
-
-</body>
+    <!-- JS -->
+    <script src="js/include.js"></script>
+  </body>
 </html>
