@@ -115,7 +115,8 @@
         border: none;
     }
 
-    .invoice {
+
+    .ExperienceBtn {
         width: 160px;
         height: 60px;
         font-size: var(--text);
@@ -126,7 +127,7 @@
         cursor: pointer;
     }
 
-    .invoice:hover {
+    .ExperienceBtn:hover {
         background-color: #24EDCB;
         transition: 0.3s;
     }
