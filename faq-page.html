@@ -13,7 +13,132 @@
     <!-- 헤더 -->
     <div id="header"></div>
 
-    <section></section>
+    <section id="faq" class="faq">
+      <div class="faq-wrap">
+        <h3>FAQ (자주 묻는 질문)</h3>
+        <div class="faqCategory">
+          <ul>
+            <li>
+              <button type="button" class="campaignHistory">캠페인내역</button>
+            </li>
+            <li>
+              <button type="button" class="chargeHistory">충전/결제내역</button>
+            </li>
+            <li><button type="button" class="faqList">FAQ</button></li>
+            <li><button type="button" class="Question">문의하기</button></li>
+          </ul>
+        </div>
+
+        <div class="searchFaq">
+          <form action="/" method="get" role="search" class="search-wrap">
+            <input
+              type="text"
+              class="searchBar"
+              placeholder="검색어를 입력하세요"
+            />
+            <button type="submit" class="searchBtn">검색</button>
+          </form>
+        </div>
+
+        <!-- 아코디언 영역 -->
+        <div class="accordion-wrap">
+          <div class="accordion">
+            <div class="accordion-header">
+              <p class="questNum">질문 1</p>
+              <p class="questionTitle">아코디언 FAQ란 무엇인가요?</p>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                아코디언 FAQ는 질문을 클릭하면 답변이 펼쳐지고, 다른 질문을
+                클릭하면 이전에 열린 답변은 접히는 형태의 UI 요소입니다. 사용자
+                경험을 개선하고 공간을 효율적으로 활용할 수 있는 장점이
+                있습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header">
+              <p class="questNum">질문 2</p>
+              <p class="questionTitle">
+                아코디언을 사용하는 이유는 무엇인가요?
+              </p>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <p>아코디언은 다음과 같은 이유로 사용됩니다:</p>
+                <ul>
+                  <li>화면 공간을 효율적으로 사용할 수 있습니다.</li>
+                  <li>사용자가 원하는 정보만 선택적으로 볼 수 있습니다.</li>
+                  <li>많은 양의 정보를 구조화하여 보여줄 수 있습니다.</li>
+                  <li>모바일 환경에서 특히 유용합니다.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header">
+              <p class="questNum">질문 3</p>
+              <p class="questionTitle">
+                아코디언 구현에 필요한 기술은 무엇인가요?
+              </p>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                아코디언 구현에는 HTML, CSS, JavaScript가 필요합니다. HTML로
+                구조를 만들고, CSS로 디자인하며, JavaScript로 클릭 시 열고
+                닫히는 동작을 구현합니다. 이 예제에서는 순수 JavaScript를
+                사용했지만, jQuery나 다른 라이브러리를 사용할 수도 있습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header">
+              <p class="questNum">질문 4</p>
+              <p class="questionTitle">아코디언은 접근성을 고려해야 하나요?</p>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                네, 접근성을 고려하는 것이 중요합니다. 키보드 탐색이 가능해야
+                하고, ARIA 속성을 추가하여 스크린 리더 사용자에게도 사용하기
+                쉽도록 해야 합니다. 이 예제에서는 간단한 구현만 했지만, 실제
+                프로젝트에서는 aria-expanded, aria-controls 등의 속성을 추가하는
+                것이 좋습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header">
+              <p class="questNum">질문 5</p>
+              <p class="questionTitle">한 번에 여러 아코디언을 열 수 있나요?</p>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                아코디언 디자인에 따라 다릅니다. 이 예제에서는 한 번에 하나만
+                열리도록 구현했지만, JavaScript 코드를 수정하면 여러 개를 동시에
+                열 수 있도록 변경할 수 있습니다. UI/UX 디자인 요구사항에 따라
+                적절한 방식을 선택하면 됩니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 아코디언 끝 -->
+        <div class="pageBtn">
+          <ul>
+            <li><button type="button" class="pgClick">◀</button></li>
+            <li><button type="button" class="pgClick">1</button></li>
+            <li><button type="button" class="pgClick">2</button></li>
+            <li><button type="button" class="pgClick">3</button></li>
+            <li><button type="button" class="pgClick">4</button></li>
+            <li><button type="button" class="pgClick">5</button></li>
+            <li><button type="button" class="pgClick">▶</button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <!-- 푸터 -->
     <div id="footer"></div>
 
@@ -27,6 +152,36 @@
                 toggleIcon.textContent = item.classList.contains('active') ? '-' : '+';
             });
         });*/
+
+      // 아코디언 코드
+      const accordions = document.querySelectorAll(".accordion-header");
+
+      accordions.forEach((accordion) => {
+        accordion.addEventListener("click", function () {
+          // 활성화된 상태 토글
+          this.classList.toggle("active");
+
+          // 컨텐츠 요소
+          const content = this.nextElementSibling;
+
+          // 다른 모든 아코디언 닫기 (한 번에 하나만 열리게 하려면 주석 해제)
+          if (this.classList.contains("active")) {
+            accordions.forEach((item) => {
+              if (item !== this) {
+                item.classList.remove("active");
+                item.nextElementSibling.style.maxHeight = null;
+              }
+            });
+          }
+
+          // 컨텐츠 열기/닫기
+          if (this.classList.contains("active")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            content.style.maxHeight = null;
+          }
+        });
+      });
     </script>
   </body>
 </html>
