@@ -13,11 +13,298 @@
     <!-- 헤더 -->
     <div id="header"></div>
 
-    <section></section>
+    <section class="signUp">
+      <div class="signUp-wrap">
+        <h3>회원가입</h3>
+
+        <div class="signUpinfomation">
+          <form action="" method="post" class="PersonalInfo">
+            <!-- 이름 -->
+            <div class="writeArea nameArea">
+              <div class="tag">
+                <label for="name">이름</label>
+                <label for="Required" class="Required">*</label>
+              </div>
+              <input
+                type="text"
+                id="name"
+                class="name"
+                name="memberRealName"
+                required
+              />
+            </div>
+            <!-- 기업명 -->
+            <div class="writeArea companyArea">
+              <div class="tag">
+                <label for="name">기업명</label>
+                <label for="Required" class="Required">*</label>
+              </div>
+              <input
+                type="text"
+                id="name"
+                class="name"
+                name="companyName"
+                required
+              />
+            </div>
+            <!-- 이메일 -->
+            <div class="writeArea emailArea">
+              <div class="tag">
+                <label for="email">이메일</label>
+                <label for="Required" class="Required">*</label>
+              </div>
+              <input
+                type="email"
+                id="email"
+                class="email"
+                name="memberEmail"
+                required
+              />
+            </div>
+            <!-- 비밀번호 -->
+            <div class="writeArea accountArea">
+              <div class="tag">
+                <label for="id">아이디</label>
+                <label for="Required" class="Required">*</label>
+              </div>
+              <input
+                type="text"
+                id="account"
+                class="account"
+                name="account"
+                required
+              />
+              <button type="button" class="duplicate">중복확인</button>
+            </div>
+            <!-- 비밀번호 -->
+            <div class="writeArea passWordArea">
+              <div class="tag">
+                <label for="password">비밀번호</label>
+                <label for="Required" class="Required">*</label>
+              </div>
+              <input
+                type="password"
+                id="pw"
+                class="pw"
+                name="password"
+                required
+              />
+              <span class="passwordrule"
+                >영문 대소문자 / 숫자 / 특수문자 중 2가지 이상 조합,
+                8자~16자</span
+              >
+            </div>
+            <!-- 비밀번호 확인 -->
+            <div class="writeArea checkedPasswordArea">
+              <div class="tag">
+                <label for="checkedPassword">비밀번호 확인</label>
+                <label for="Required" class="Required">*</label>
+              </div>
+              <input
+                type="password"
+                id="checkedPw"
+                class="checkedPw"
+                name="checkedPw"
+                required
+              />
+            </div>
+
+            <!-- 연락처 -->
+            <div class="writeArea phoneNumberArea">
+              <div class="tag">
+                <label for="phoneNum">연락처</label>
+                <label for="Required" class="Required">*</label>
+              </div>
+              <input
+                type="text"
+                id="firstNum"
+                class="telephone firstNum"
+                name="firstNum"
+                required
+              />
+              -
+              <input
+                type="text"
+                id="middleNum"
+                class="telephone middleNum"
+                name="middleNum"
+                required
+              />
+              -
+              <input
+                type="text"
+                id="lastNum"
+                class="telephone lastNum"
+                name="lastNum"
+                required
+              />
+            </div>
+          </form>
+
+          <div class="terms-container">
+            <div class="all-agree">
+              <label for="all-check">
+                <input type="checkbox" id="all-check" />
+                1. 모든 약관을 확인하고 전체 동의합니다.
+              </label>
+            </div>
+
+            <div class="terms-item">
+              <label for="term1">
+                <input type="checkbox" id="term1" class="required-check" />
+                2. <span class="required">[필수]</span> 이용약관 동의
+              </label>
+              <div class="accordion">
+                <div class="accordion-header">약관 내용 보기</div>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <h4>이용약관</h4>
+
+                    <p>
+                      제 1 조 (목적)<br />
+                      이 약관은 회사가 제공하는 서비스의 이용조건 및 절차,
+                      회사와 회원 간의 권리, 의무, 책임사항과 기타 필요한 사항을
+                      규정함을 목적으로 합니다.
+                    </p>
+
+                    <p>
+                      제 2 조 (용어의 정의)<br />
+                      이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+                    </p>
+                    <ol>
+                      <li>
+                        "서비스"라 함은 회사가 제공하는 모든 서비스를
+                        의미합니다.
+                      </li>
+                      <li>
+                        "회원"이라 함은 회사에 개인정보를 제공하고 회원으로
+                        등록한 자를 말합니다.
+                      </li>
+                      <li>
+                        "아이디(ID)"라 함은 회원이 서비스 이용을 위해 회사가
+                        승인한 문자와 숫자의 조합을 말합니다.
+                      </li>
+                      <li>
+                        "비밀번호"라 함은 회원이 부여 받은 아이디와 일치된
+                        회원임을 확인하고 회원의 개인정보를 보호하기 위해 회원
+                        자신이 설정한 문자와 숫자의 조합을 말합니다.
+                      </li>
+                    </ol>
+
+                    <p>
+                      제 3 조 (약관의 효력 및 변경)<br />
+                      1. 이 약관은 서비스를 통하여 이를 공지하거나 전자메일,
+                      기타의 방법으로 회원에게 통지함으로써 효력이
+                      발생합니다.<br />
+                      2. 회사는 사정상 중요한 사유가 발생될 경우 사전 고지 없이
+                      이 약관의 내용을 변경할 수 있으며, 변경된 약관은 제1항과
+                      같은 방법으로 공지 또는 통지함으로써 효력이 발생됩니다.<br />
+                      3. 회원은 변경된 약관에 동의하지 않을 경우 회원 탈퇴를
+                      요청할 수 있으며, 변경된 약관의 효력 발생일로부터 7일
+                      이후에도 거부의사를 표시하지 아니하고 서비스를 계속 사용할
+                      경우 약관의 변경 사항에 동의한 것으로 간주됩니다.
+                    </p>
+
+                    <p>
+                      제 4 조 (서비스의 내용)<br />
+                      회사가 제공하는 서비스의 내용은 다음과 같습니다.<br />
+                      1. 쇼핑 서비스<br />
+                      2. 정보 제공 서비스<br />
+                      3. 기타 회사가 추가 개발하거나 제휴를 통해 회원에게
+                      제공하는 일체의 서비스
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="terms-item">
+              <label for="term2">
+                <input type="checkbox" id="term2" />
+                3. <span class="optional">[선택]</span> 쇼핑정보 수신 동의
+              </label>
+            </div>
+
+            <div class="terms-item">
+              <label for="term3">
+                <input type="checkbox" id="term3" />
+                4. <span class="optional">[선택]</span> SNS 수신동의
+              </label>
+            </div>
+
+            <div class="terms-item">
+              <label for="term4">
+                <input type="checkbox" id="term4" />
+                5. <span class="optional">[선택]</span> 이메일 수신 동의
+              </label>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <button type="button" class="btn-submit" id="submit-btn" disabled>
+              회원가입
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 푸터 -->
     <div id="footer"></div>
 
     <!-- JS -->
     <script src="js/include.js"></script>
+    <script>
+      // 아코디언 기능
+      const accordions = document.querySelectorAll(".accordion-header");
+
+      accordions.forEach((accordion) => {
+        accordion.addEventListener("click", function () {
+          // 활성화된 상태 토글
+          this.classList.toggle("active");
+
+          // 컨텐츠 요소
+          const content = this.nextElementSibling;
+
+          // 컨텐츠 열기/닫기
+          if (this.classList.contains("active")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            content.style.maxHeight = null;
+          }
+        });
+      });
+
+      // 체크박스 기능
+      const allCheck = document.getElementById("all-check");
+      const termCheckboxes = document.querySelectorAll(
+        '.terms-item input[type="checkbox"]'
+      );
+      const requiredCheckbox = document.querySelector(".required-check");
+      const submitButton = document.getElementById("submit-btn");
+
+      // 전체 선택 체크박스 이벤트
+      allCheck.addEventListener("change", function () {
+        termCheckboxes.forEach((checkbox) => {
+          checkbox.checked = this.checked;
+        });
+
+        // 필수 약관 체크 여부에 따라 버튼 활성화
+        submitButton.disabled = !requiredCheckbox.checked;
+      });
+
+      // 개별 체크박스 이벤트
+      termCheckboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          // 모든 체크박스가 선택되었는지 확인
+          const allChecked = Array.from(termCheckboxes).every(
+            (checkbox) => checkbox.checked
+          );
+          allCheck.checked = allChecked;
+
+          // 필수 약관 체크 여부에 따라 버튼 활성화
+          submitButton.disabled = !requiredCheckbox.checked;
+        });
+      });
+    </script>
   </body>
 </html>
