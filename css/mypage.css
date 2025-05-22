@@ -1,244 +1,289 @@
-    .mypage {
-        position: relative;
-        min-height: 100vh;
-        height: auto;
-    }
+ h4 {
+     font-size: var(--subTitle);
+ }
+
+ .mypage {
+     position: relative;
+     min-height: 100vh;
+     height: auto;
+ }
 
 
-    .mypage .mypage-wrap {
-        position: relative;
-        margin: 120px auto;
-        padding: 120px 0;
-        width: 1200px;
-    }
+ .mypage .mypage-wrap {
+     position: relative;
+     margin: 120px auto;
+     padding: 120px 0;
+     width: 1200px;
+ }
 
 
-    .mypage .mypage-wrap h3 {
-        text-align: center;
-        font-weight: 800;
+ .mypage .mypage-wrap h3 {
+     text-align: center;
+     font-weight: 800;
 
-    }
+ }
 
-    .userName {
-        margin: 60px 0 0 0;
-        font-size: 24px;
-        font-weight: 400;
-    }
+ .userName {
+     margin: 60px 0 0 0;
+     font-size: 24px;
+     font-weight: 400;
+ }
 
-    .userName .nameArea {
-        font-weight: 700;
-    }
+ .userName .nameArea {
+     font-weight: 700;
+ }
 
-    .editArea {
-        display: flex;
-        justify-content: space-between;
-        width: 1140px;
-        height: 250px;
-        margin: 20px 0 0 0;
-        padding: 30px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-    }
+ .editArea {
+     display: flex;
+     justify-content: space-between;
+     width: 1140px;
+     height: 250px;
+     margin: 20px 0 0 0;
+     padding: 30px;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+ }
 
-    .editArea .userData,
-    .editArea .dataEditBtn {
-        width: calc(100%/2);
-        padding: 20px 30px;
-    }
+ .editArea .userData,
+ .editArea .dataEditBtn {
+     width: calc(100%/2);
+     padding: 20px 30px;
+ }
 
-    .editArea .userData {
-        border-right: 1px solid #ccc;
-    }
-
-
-    .editArea .userData li {
-        font-size: 18px;
-        line-height: 36px;
-    }
-
-    .editArea .userData .listTitle {
-        margin: 0 0 20px 0;
-        padding: 0 0 20px 0;
-        font-size: 24px;
-        font-weight: 700;
-        border-bottom: 1px solid #000;
-    }
-
-    .editArea .dataEditBtn li {
-        width: 100%;
-        height: 60px;
-        margin: 0 0 20px 0;
-        text-align: center;
-    }
-
-    .editArea .dataEditBtn li a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 60px;
-        margin: 0 auto;
-        color: #000;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-    }
-
-    .editArea .dataEditBtn .pointCharge {
-        font-weight: 700;
-        background-color: var(--pointColor);
-        border-radius: 10px;
-    }
+ .editArea .userData {
+     border-right: 1px solid #ccc;
+ }
 
 
-    .historyBtn {
-        width: 100%;
-        height: 120px;
-    }
+ .editArea .userData li {
+     font-size: 18px;
+     line-height: 36px;
+ }
 
-    .historyBtn ul {
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
-        padding: 120px 0 0 0;
-    }
+ .editArea .userData .listTitle {
+     margin: 0 0 20px 0;
+     padding: 0 0 20px 0;
+     font-size: 24px;
+     font-weight: 700;
+     border-bottom: 1px solid #000;
+ }
 
+ .editArea .dataEditBtn li {
+     width: 100%;
+     height: 60px;
+     margin: 0 0 20px 0;
+     text-align: center;
+ }
 
-    .historyBtn ul li {
-        width: 140px;
-        text-align: center;
-        background-color: var(--pointColor);
-        border-radius: 10px;
-    }
+ .editArea .dataEditBtn li a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 60px;
+     color: #000;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+ }
 
-
-    .historyBtn ul li button {
-        width: 140px;
-        padding: 10px 20px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-
-    .historyBtn ul li button:hover {
-        font-weight: 600;
-        background-color: #24EDCB;
-        border-radius: 10px;
-        transition: 0.3s;
-    }
-
-
-    .historyList {
-        padding: 90px 0 0 0;
-    }
+ .editArea .dataEditBtn .pointArea {
+     display: flex;
+     justify-content: space-between;
+     gap: 20px;
+     width: 100%;
+ }
 
 
-    .historyTable {
-        width: 100%;
-        text-align: left;
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
+ .editArea .dataEditBtn .pointArea .point {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     height: auto;
+     text-align: left;
+     background-color: #cbfff6;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+ }
 
-    .historyTable .historyColumn {
-        padding: 20px 0;
-    }
+ .pointScore {
+     font-size: var(--subTitle);
+     font-weight: 700;
+ }
 
-    .historyTable .historyColumn th {
-        font-weight: 400;
-        padding: 20px 0;
-
-        border-bottom: 1px solid #ccc;
-    }
-
-    .historyTable .moreView {
-        text-align: right;
-    }
-
-
-    .historyTable .historyRow .rowLine td {
-        padding: 20px 0;
-        border-bottom: 1px solid #ccc;
-    }
+ .editArea .dataEditBtn .pointCharge {
+     width: 50%;
+     font-weight: 700;
+     background-color: var(--pointColor);
+     border-radius: 10px;
+ }
 
 
-    .historyTable .historyRow .rowLine .moreViewBtn {
-        padding: 5px 20px;
-        text-align: right;
-    }
 
-    .historyTable .historyRow .rowLine .moreViewBtn .stateDot {
-        display: inline-block;
-        width: 60px;
-        padding: 5px 10px;
-        text-align: center;
-        border-radius: 50px;
-    }
+ .categoryBtn {
+     width: 100%;
+     height: 120px;
+ }
 
-
-    .historyTable .historyRow .rowLine .moreViewBtn .redDot {
-        background-color: #FFB5B5;
-        border: 1px solid #c91619;
-        color: #c91619;
-    }
-
-    .historyTable .historyRow .rowLine .moreViewBtn .yellowDot {
-        background-color: #FFF47C;
-        border: 1px solid #F48E00;
-        color: #F48E00;
-    }
-
-    .historyTable .historyRow .rowLine .moreViewBtn .greenDot {
-        background-color: #C4FFB5;
-        border: 1px solid #49AA5E;
-        color: #49AA5E;
-    }
-
-    .historyTable .historyRow .rowLine .moreViewBtn .greyDot {
-        background-color: #ddd;
-        border: 1px solid #777;
-        color: #777;
-    }
+ .categoryBtn ul {
+     display: flex;
+     justify-content: flex-start;
+     gap: 30px;
+     padding: 120px 0 0 0;
+ }
 
 
-    .pageBtn {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        width: 270px;
-        padding: 20px;
-
-    }
-
-    .pageBtn ul {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
+ .categoryBtn ul li {
+     width: 140px;
+     text-align: center;
+     background-color: var(--pointColor);
+     border-radius: 10px;
+ }
 
 
-    .pageBtn ul li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        font-weight: 400;
-        color: #777;
-        border: 1px solid #ccc;
-    }
-
-    .pageBtn ul li .pgClick {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        color: #777;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
+ .categoryBtn ul li button {
+     width: 140px;
+     padding: 10px 20px;
+     background: none;
+     border: none;
+     cursor: pointer;
+ }
 
 
-    .pageBtn ul li .pgClick:hover {
-        background: var(--pointColor);
-    }
+ .categoryBtn ul li button:hover {
+     font-weight: 600;
+     background-color: #24EDCB;
+     border-radius: 10px;
+     transition: 0.3s;
+ }
+
+
+ .historyList,
+ .faqList {
+     padding: 90px 0 0 0;
+ }
+
+
+
+ .historyTable,
+ .faqListTable {
+     width: 100%;
+     text-align: left;
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+ .columnBox {
+     padding: 20px 0;
+ }
+
+ .columnBox th {
+     font-weight: 400;
+     padding: 20px 0;
+
+     border-bottom: 1px solid #ccc;
+ }
+
+ .historyTable .moreView {
+     text-align: right;
+ }
+
+ .rowBox .rowLine td {
+     padding: 20px 0;
+     border-bottom: 1px solid #ccc;
+ }
+
+ .rowBox .HistoryLine td:nth-child(1) {
+     width: 600px;
+
+ }
+
+ .rowBox .faqLine td:nth-child(3) {
+     width: 600px;
+ }
+
+ .rowBox .rowLine td:nth-child(5) {
+     width: 100px;
+ }
+
+
+ .rowBox .rowLine .statusDot {
+     padding: 5px 20px;
+     text-align: right;
+ }
+
+ .rowLine .statusDot .stateDot {
+     display: inline-block;
+     width: 60px;
+     padding: 5px 10px;
+     text-align: center;
+     border-radius: 50px;
+ }
+
+
+ .rowBox .rowLine .statusDot .redDot {
+     background-color: var(--redDotBg);
+     border: 1px solid var(--redDotBorText);
+     color: var(--redDotBorText);
+ }
+
+ .rowBox .rowLine .statusDot .yellowDot {
+     background-color: #FFF47C;
+     border: 1px solid #F48E00;
+     color: #F48E00;
+ }
+
+ .rowBox .rowLine .statusDot .greenDot {
+     background-color: #C4FFB5;
+     border: 1px solid #49AA5E;
+     color: #49AA5E;
+ }
+
+ .rowBox .rowLine .statusDot .greyDot {
+     background-color: #ddd;
+     border: 1px solid #777;
+     color: #777;
+ }
+
+
+ .pageBtn {
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%);
+     width: 270px;
+     padding: 20px;
+
+ }
+
+ .pageBtn ul {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+ }
+
+
+ .pageBtn ul li {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 30px;
+     height: 30px;
+     font-weight: 400;
+     color: #777;
+     border: 1px solid #ccc;
+ }
+
+ .pageBtn ul li .pgClick {
+     display: inline-block;
+     width: 30px;
+     height: 30px;
+     color: #777;
+     background: none;
+     border: none;
+     cursor: pointer;
+ }
+
+
+ .pageBtn ul li .pgClick:hover {
+     background: var(--pointColor);
+ }

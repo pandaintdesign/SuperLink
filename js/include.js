@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((res) => res.text())
     .then((data) => (document.getElementById("header").innerHTML = data));
 
+  fetch("./quick.html")
+    .then((res) => res.text())
+    .then((data) => (document.getElementById("quickBar").innerHTML = data));
+
   fetch("./footer.html")
     .then((res) => res.text())
     .then((data) => (document.getElementById("footer").innerHTML = data));

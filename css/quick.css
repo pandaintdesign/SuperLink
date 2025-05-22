@@ -1,0 +1,17 @@
+.pointScoreTag {
+    position: fixed;
+    top: 140px;
+    right: 20px;
+    z-index: 9999;
+    width: 160px;
+    height: 50px;
+    padding: 10px;
+    background-color: var(--pointColor);
+    border-radius: 10px;
+}
+
+
+.pointScoreTag .nowCash {
+    font-size: var(--subTitle);
+    font-weight: 700;
+}

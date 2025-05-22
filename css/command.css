@@ -5,7 +5,17 @@
     --textColor: #000;
     --largeTitle: 60px;
     --mediumTitle: 40px;
+    --subTitle: 26px;
     --text: 18px;
+    --redDotBg: #ffb5b5;
+    --redDotBorText: #c91619;
+    --redDotText: #c91619;
+    --yellowDotBg: #FFF47C;
+    --yellowDotBorText: #F48E00;
+    --greenDotBg: #C4FFB5;
+    --greenDotBorText: #49aa5e;
+    --greyDotBg: #ddd;
+    --greyDotBorText: #777;
 }
 
 @font-face {

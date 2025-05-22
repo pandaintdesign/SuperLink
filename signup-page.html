@@ -253,58 +253,6 @@
 
     <!-- JS -->
     <script src="js/include.js"></script>
-    <script>
-      // 아코디언 기능
-      const accordions = document.querySelectorAll(".accordion-header");
-
-      accordions.forEach((accordion) => {
-        accordion.addEventListener("click", function () {
-          // 활성화된 상태 토글
-          this.classList.toggle("active");
-
-          // 컨텐츠 요소
-          const content = this.nextElementSibling;
-
-          // 컨텐츠 열기/닫기
-          if (this.classList.contains("active")) {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } else {
-            content.style.maxHeight = null;
-          }
-        });
-      });
-
-      // 체크박스 기능
-      const allCheck = document.getElementById("all-check");
-      const termCheckboxes = document.querySelectorAll(
-        '.terms-item input[type="checkbox"]'
-      );
-      const requiredCheckbox = document.querySelector(".required-check");
-      const submitButton = document.getElementById("submit-btn");
-
-      // 전체 선택 체크박스 이벤트
-      allCheck.addEventListener("change", function () {
-        termCheckboxes.forEach((checkbox) => {
-          checkbox.checked = this.checked;
-        });
-
-        // 필수 약관 체크 여부에 따라 버튼 활성화
-        submitButton.disabled = !requiredCheckbox.checked;
-      });
-
-      // 개별 체크박스 이벤트
-      termCheckboxes.forEach((checkbox) => {
-        checkbox.addEventListener("change", function () {
-          // 모든 체크박스가 선택되었는지 확인
-          const allChecked = Array.from(termCheckboxes).every(
-            (checkbox) => checkbox.checked
-          );
-          allCheck.checked = allChecked;
-
-          // 필수 약관 체크 여부에 따라 버튼 활성화
-          submitButton.disabled = !requiredCheckbox.checked;
-        });
-      });
-    </script>
+    <script src="js/signup.js"></script>
   </body>
 </html>

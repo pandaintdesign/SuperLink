@@ -36,55 +36,112 @@
               </li>
             </ul>
             <ul class="dataEditBtn">
-              <li><a href="#" class="pointCharge">포인트 충전</a></li>
+              <li class="pointArea">
+                <p class="point">
+                  현재 포인트<span class="pointScore">0,000,000</span>
+                </p>
+                <a href="#" class="pointCharge">포인트 충전</a>
+              </li>
               <li><a href="#">회원정보 수정</a></li>
               <li><a href="#">비밀번호 변경</a></li>
             </ul>
           </div>
         </div>
 
-        <div class="historyBtn">
+        <div class="categoryBtn">
           <ul>
             <li><button type="button">캠페인 내역</button></li>
             <li><button type="button">충전/ 결제 내역</button></li>
             <li><button type="button">문의 내역</button></li>
           </ul>
         </div>
-
+        <!-- 진행현황 -->
         <div class="historyList">
+          <h4>캠페인 내역</h4>
           <table class="historyTable">
-            <thead class="historyColumn">
+            <thead class="columnBox">
               <th>캠페인 명</th>
               <th>기간</th>
               <th class="moreView"><a href="">더보기&gt;</a></th>
             </thead>
-            <tbody class="historyRow">
-              <tr class="rowLine">
+            <tbody class="rowBox">
+              <tr class="rowLine HistoryLine">
                 <td class="campeinName">A브랜드 캠페인</td>
                 <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
-                <td class="moreViewBtn">
+                <td class="statusDot">
+                  <span class="stateDot redDot">진행예정</span>
+                </td>
+              </tr>
+              <tr class="rowLine HistoryLine">
+                <td class="campeinName">A브랜드 캠페인</td>
+                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot">
+                  <span class="stateDot yellowDot">진행중</span>
+                </td>
+              </tr>
+              <tr class="rowLine HistoryLine">
+                <td class="campeinName">A브랜드 캠페인</td>
+                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot">
+                  <span class="stateDot greenDot">진행완료</span>
+                </td>
+              </tr>
+              <tr class="rowLine HistoryLine">
+                <td class="campeinName">A브랜드 캠페인</td>
+                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot">
+                  <span class="stateDot greyDot">보류</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 문의내역 -->
+        <div class="faqList">
+          <h4>문의내역</h4>
+          <table class="faqListTable">
+            <thead class="columnBox">
+              <th>번호</th>
+              <th>카테고리</th>
+              <th>문의제목</th>
+              <th>등록일</th>
+              <th class="">진행현황</th>
+            </thead>
+            <tbody class="rowBox">
+              <tr class="rowLine faqLine">
+                <td class="listNum">00</td>
+                <td class="faqCategoryList">캠페인</td>
+                <td class="faqTitle">문의제목을 입력하세요</td>
+                <td class="faqUploadDate">0000.00.00</td>
+                <td class="statusDot">
                   <span class="stateDot redDot">진행예정</span>
                 </td>
               </tr>
               <tr class="rowLine">
-                <td class="campeinName">A브랜드 캠페인</td>
-                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
-                <td class="moreViewBtn">
-                  <span class="stateDot yellowDot">진행중</span>
+                <td class="listNum">00</td>
+                <td class="faqCategoryList">결제</td>
+                <td class="faqTitle">문의제목을 입력하세요</td>
+                <td class="faqUploadDate">0000.00.00</td>
+                <td class="statusDot">
+                  <span class="stateDot yellowDot">처리중</span>
                 </td>
               </tr>
               <tr class="rowLine">
-                <td class="campeinName">A브랜드 캠페인</td>
-                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
-                <td class="moreViewBtn">
+                <td class="listNum">00</td>
+                <td class="faqCategoryList">기타</td>
+                <td class="faqTitle">문의제목을 입력하세요</td>
+                <td class="faqUploadDate">0000.00.00</td>
+                <td class="statusDot">
                   <span class="stateDot greenDot">진행완료</span>
                 </td>
               </tr>
               <tr class="rowLine">
-                <td class="campeinName">A브랜드 캠페인</td>
-                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
-                <td class="moreViewBtn">
-                  <span class="stateDot greyDot">보류</span>
+                <td class="listNum">00</td>
+                <td class="faqCategoryList">셀러</td>
+                <td class="faqTitle">문의제목을 입력하세요</td>
+                <td class="faqUploadDate">0000.00.00</td>
+                <td class="statusDot">
+                  <span class="stateDot greenDot">진행완료</span>
                 </td>
               </tr>
             </tbody>
