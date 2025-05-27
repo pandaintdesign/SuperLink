@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
     <link rel="stylesheet" href="./css/campaign-detail.css" />
+    <link rel="stylesheet" href="./css/page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
@@ -16,48 +17,51 @@
     <section id="campaign-detail" class="campaign-detail">
       <div class="campaign-detail-wrap">
         <h3>진행현황</h3>
-        <div class="historyList">
-          <h4>캠페인 내역</h4>
+        <!-- 캠페인 리스트 -->
+        <div class="campaignList">
+          <h4 class="subTitle">캠페인 내역</h4>
           <table class="campaignTablelist">
             <thead class="columnBox">
               <th>캠페인 명</th>
               <th>기간</th>
-              <th class="moreView"><a href="">더보기&gt;</a></th>
+              <th>진행현황</th>
             </thead>
             <tbody class="rowBox">
               <tr class="rowLine HistoryLine">
-                <td class="campeinName">A브랜드 캠페인</td>
-                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
-                <td class="statusDot">
+                <td class="campeinName row-cell">A브랜드 캠페인</td>
+                <td class="stardDate row-cell">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot row-cell">
                   <span class="stateDot redDot">진행예정</span>
                 </td>
               </tr>
               <tr class="rowLine HistoryLine">
-                <td class="campeinName">A브랜드 캠페인</td>
-                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
-                <td class="statusDot">
+                <td class="campeinName row-cell">A브랜드 캠페인</td>
+                <td class="stardDate row-cell">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot row-cell">
                   <span class="stateDot yellowDot">진행중</span>
                 </td>
               </tr>
               <tr class="rowLine HistoryLine">
-                <td class="campeinName">A브랜드 캠페인</td>
-                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
-                <td class="statusDot">
+                <td class="campeinName row-cell">A브랜드 캠페인</td>
+                <td class="stardDate row-cell">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot row-cell">
                   <span class="stateDot greenDot">진행완료</span>
                 </td>
               </tr>
               <tr class="rowLine HistoryLine">
-                <td class="campeinName">A브랜드 캠페인</td>
-                <td class="stardDate">0000-00-00 ~ 0000-00-00</td>
-                <td class="statusDot">
+                <td class="campeinName row-cell">A브랜드 캠페인</td>
+                <td class="stardDate row-cell">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot row-cell">
                   <span class="stateDot greyDot">보류</span>
                 </td>
               </tr>
             </tbody>
           </table>
+          <button type="button" class="moreView">더보기&gt;</button>
         </div>
+        <!-- 상세내역 -->
         <div class="subTitle">
-          <h4 class="userName">
+          <h4 class="userName sectionTitle">
             <span class="brandName">A브랜드</span> |
             <span class="bloggerCategory">신상품 체험단</span>
           </h4>
@@ -94,20 +98,30 @@
                   완료<span class="finish">3명</span> | 예정
                   <span class="ready">7명</span>
                 </p>
-                <div class="btnGroup">
-                  <button type="button" class="ExperienceBtn download">
-                    다운로드
-                  </button>
-                  <button type="button" class="ExperienceBtn invoice">
-                    송장업로드
-                  </button>
-                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="historyList">
+          <div class="btnGroup">
+            <div class="upAndDown">
+              <button type="button" class="ExperienceBtn download">
+                다운로드
+              </button>
+              <input
+                type="file"
+                class="ExperienceBtn"
+                id="fileUpload"
+                name="fileUpload"
+              />
+            </div>
+            <div class="saveData">
+              <button type="button" class="ExperienceBtn saveData">
+                저장하기
+              </button>
+            </div>
+          </div>
           <table class="historyTable">
             <thead class="historyColumn">
               <th>블로거명</th>
@@ -117,64 +131,23 @@
               <th>주소</th>
               <th>택배사</th>
               <th>송장번호</th>
+              <th>관리</th>
             </thead>
-            <tbody class="historyRow">
-              <tr class="rowLine">
-                <td class="bloggerName">블로거A</td>
-                <td class="blogPoint">90</td>
-                <td class="RealUserName">홍길동</td>
-                <td class="phoneNum">000-0000-000</td>
-                <td class="HomeAdress">서울 강남구 학동로 426 강남구청</td>
-                <td class="Courier">CJ대한통운</td>
-                <td class="deliveryCode">0000000000000</td>
-              </tr>
-              <tr class="rowLine">
-                <td class="bloggerName">블로거A</td>
-                <td class="blogPoint">90</td>
-                <td class="RealUserName">홍길동</td>
-                <td class="phoneNum">000-0000-000</td>
-                <td class="HomeAdress">서울 강남구 학동로 426 강남구청</td>
-                <td class="Courier">CJ대한통운</td>
-                <td class="deliveryCode">0000000000000</td>
-              </tr>
-              <tr class="rowLine">
-                <td class="bloggerName">블로거A</td>
-                <td class="blogPoint">90</td>
-                <td class="RealUserName">홍길동</td>
-                <td class="phoneNum">000-0000-000</td>
-                <td class="HomeAdress">서울 강남구 학동로 426 강남구청</td>
-                <td class="Courier">CJ대한통운</td>
-                <td class="deliveryCode">0000000000000</td>
-              </tr>
-              <tr class="rowLine">
-                <td class="bloggerName">블로거A</td>
-                <td class="blogPoint">90</td>
-                <td class="RealUserName">홍길동</td>
-                <td class="phoneNum">000-0000-000</td>
-                <td class="HomeAdress">서울 강남구 학동로 426 강남구청</td>
-                <td class="Courier">CJ대한통운</td>
-                <td class="deliveryCode">0000000000000</td>
-              </tr>
+            <tbody class="historyRow rowBox" id="deliveryTableBody">
+              <!-- JavaScript로 동적 생성 -->
             </tbody>
           </table>
-        </div>
-        <div class="pageBtn">
-          <ul>
-            <li><button type="button" class="pgClick">◀</button></li>
-            <li><button type="button" class="pgClick">1</button></li>
-            <li><button type="button" class="pgClick">2</button></li>
-            <li><button type="button" class="pgClick">3</button></li>
-            <li><button type="button" class="pgClick">4</button></li>
-            <li><button type="button" class="pgClick">5</button></li>
-            <li><button type="button" class="pgClick">▶</button></li>
-          </ul>
+          <div id="page"></div>
         </div>
       </div>
+
+      <div id="toast" class="toast"></div>
     </section>
     <!-- 푸터 -->
     <div id="footer"></div>
 
     <!-- JS -->
     <script src="js/include.js"></script>
+    <script src="js/campaign-detail.js"></script>
   </body>
 </html>

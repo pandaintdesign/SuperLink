@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
     <link rel="stylesheet" href="./css/mypage.css" />
+    <link rel="stylesheet" href="./css/page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
@@ -62,7 +63,7 @@
             <thead class="columnBox">
               <th>캠페인 명</th>
               <th>기간</th>
-              <th class="moreView"><a href="">더보기&gt;</a></th>
+              <th>진행현황</th>
             </thead>
             <tbody class="rowBox">
               <tr class="rowLine HistoryLine">
@@ -95,6 +96,7 @@
               </tr>
             </tbody>
           </table>
+          <button type="button" class="moreView">더보기&gt;</button>
         </div>
         <!-- 문의내역 -->
         <div class="faqList">
@@ -105,7 +107,7 @@
               <th>카테고리</th>
               <th>문의제목</th>
               <th>등록일</th>
-              <th class="">진행현황</th>
+              <th>진행현황</th>
             </thead>
             <tbody class="rowBox">
               <tr class="rowLine faqLine">
@@ -144,20 +146,19 @@
                   <span class="stateDot greenDot">진행완료</span>
                 </td>
               </tr>
+              <tr class="rowLine">
+                <td class="listNum">00</td>
+                <td class="faqCategoryList">셀러</td>
+                <td class="faqTitle">문의제목을 입력하세요</td>
+                <td class="faqUploadDate">0000.00.00</td>
+                <td class="statusDot">
+                  <span class="stateDot greenDot">진행완료</span>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
-        <div class="pageBtn">
-          <ul>
-            <li><button type="button" class="pgClick">◀</button></li>
-            <li><button type="button" class="pgClick">1</button></li>
-            <li><button type="button" class="pgClick">2</button></li>
-            <li><button type="button" class="pgClick">3</button></li>
-            <li><button type="button" class="pgClick">4</button></li>
-            <li><button type="button" class="pgClick">5</button></li>
-            <li><button type="button" class="pgClick">▶</button></li>
-          </ul>
-        </div>
+        <div id="page"></div>
       </div>
     </section>
 

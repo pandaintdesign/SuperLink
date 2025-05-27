@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/command.css" />
+    <link rel="stylesheet" href="./css/recruit.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <div id="header"></div>
+
+    <section id="recruit" class="recruit">
+      <div class="recruit-wrap">
+        <h3>블로그 모집 신청</h3>
+        <div class="recruit-form">
+          <form action="" method="post" class="recruitArea">
+            <div class="previous-campaigns">
+              <label for="campaignOption">이전 캠페인 불러오기</label>
+              <select name="campaignOption" id="campaignOption" class="dropBox">
+                <option value="">캠페인을 선택해주세요</option>
+              </select>
+            </div>
+
+            <div class="campaign-details">
+              <h4>캠페인 정보</h4>
+              <div class="campaignInput Brand">
+                <label for="brandName">브랜드명</label>
+                <input
+                  type="text"
+                  id="brandName"
+                  name="brandName"
+                  class="brandName"
+                  placeholder="브랜드명을 입력해 주세요"
+                  required
+                />
+              </div>
+              <div class="campaignInput productName">
+                <label for="productName">상품명</label>
+                <input
+                  type="text"
+                  id="productName"
+                  name="productName"
+                  class="productName"
+                  placeholder="상품명을 입력해 주세요"
+                  required
+                />
+              </div>
+              <div class="campaignInput pageUrl">
+                <label for="urlName">상품페이지 URL</label>
+                <input
+                  type="url"
+                  id="urlName"
+                  name="urlName"
+                  class="urlName"
+                  placeholder="상품페이지 URL을 입력해 주세요"
+                  required
+                />
+              </div>
+              <div class="shippingChecked">
+                <h4>상품 발송여부</h4>
+                <div class="checkedagree">
+                  <input
+                    type="radio"
+                    id="yes"
+                    name="shipping"
+                    value="yes"
+                    required
+                  />
+                  <label for="yes">예, 발송합니다.</label>
+                  <input
+                    type="radio"
+                    id="no"
+                    name="shipping"
+                    value="no"
+                    required
+                  />
+                  <label for="no">아니오, 금액만 지불합니다.</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-conditions">
+              <h4>진행조건</h4>
+              <div class="selectCondition">
+                <ul class="selectArea">
+                  <li>
+                    <button
+                      type="button"
+                      id="gift"
+                      class="selectPrize"
+                      data-value="gift"
+                    >
+                      상품증정
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      id="cash5"
+                      class="selectPrize"
+                      data-value="5"
+                    >
+                      5만원 지급
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      id="cash10"
+                      class="selectPrize"
+                      data-value="10"
+                    >
+                      10만원 지급
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      id="cash30"
+                      class="selectPrize"
+                      data-value="30"
+                    >
+                      30만원 지급
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="startMembers">
+              <h4>체험단 모집 인원</h4>
+              <ul class="selectPeople">
+                <li>
+                  <button
+                    type="button"
+                    data-value="5"
+                    data-id="five"
+                    class="selectPeopleNum"
+                  >
+                    5명
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    data-value="10"
+                    data-id="ten"
+                    class="selectPeopleNum"
+                  >
+                    10명
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    data-value="20"
+                    data-id="twenty"
+                    class="selectPeopleNum"
+                  >
+                    20명
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    data-value="50"
+                    data-id="fifty"
+                    class="selectPeopleNum"
+                  >
+                    50명
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="blogger-conditions">
+              <div class="dropSelect">
+                <div class="categorySelect">
+                  <label for="category">카테고리 선택</label>
+                  <select
+                    name="category"
+                    id="category"
+                    class="dropBox"
+                    required
+                  >
+                    <option value="">카테고리를 선택해주세요</option>
+                    <option value="beauty">뷰티</option>
+                    <option value="fashion">패션</option>
+                    <option value="food">음식</option>
+                    <option value="lifestyle">라이프스타일</option>
+                  </select>
+                </div>
+                <div class="pointSelect">
+                  <label for="point">지수선택</label>
+                  <select name="point" id="point" class="dropBox" required>
+                    <option value="">지수기준을 선택해주세요</option>
+                    <option value="1000">1000점 이상</option>
+                    <option value="2000">2000점 이상</option>
+                    <option value="3000">3000점 이상</option>
+                  </select>
+                </div>
+              </div>
+              <div class="visitPeople">
+                <h4>일 방문자 범위</h4>
+                <ul>
+                  <li>
+                    <button
+                      type="button"
+                      data-value="min"
+                      data-id="299"
+                      class="visitNum"
+                    >
+                      ~299명
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      data-value="mid"
+                      data-id="999"
+                      class="visitNum"
+                    >
+                      300~999명
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      data-value="max"
+                      data-id="1000"
+                      class="visitNum"
+                    >
+                      1000명 이상
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="guide-content">
+              <h4>가이드</h4>
+              <div class="keywordArea">
+                <div>
+                  <label for="mainKeyword">메인키워드</label>
+                  <input
+                    type="text"
+                    id="mainKeyword"
+                    name="mainKeyword"
+                    class="mainKeyword"
+                    placeholder="메인키워드를 입력해주세요"
+                  />
+                </div>
+                <div>
+                  <label for="subKeyword">서브키워드</label>
+                  <input
+                    type="text"
+                    id="subKeyword"
+                    name="subKeyword"
+                    class="subKeyword"
+                    placeholder="서브키워드를 입력해주세요"
+                  />
+                </div>
+              </div>
+              <label for="reviewGuide">후기 작성 가이드</label>
+              <textarea
+                id="reviewGuide"
+                name="reviewGuide"
+                class="reviewGuide"
+                placeholder="후기 작성시 주의사항을 자세히 입력해주세요&#10;예: 제품 사용 후 솔직한 후기 작성, 필수 해시태그 포함 등"
+              ></textarea>
+            </div>
+
+            <div class="submit-area">
+              <button type="submit" class="submit-btn">캠페인 신청하기</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <div id="footer"></div>
+    <!-- JS -->
+    <script src="js/include.js"></script>
+    <script src="js/recruit.js"></script>
+  </body>
+</html>
