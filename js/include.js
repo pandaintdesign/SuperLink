@@ -12,4 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("./footer.html")
     .then((res) => res.text())
     .then((data) => (document.getElementById("footer").innerHTML = data));
+
+  fetch("./page.html")
+    .then((res) => res.text())
+    .then((data) => (document.getElementById("page").innerHTML = data));
 });
