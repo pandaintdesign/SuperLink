@@ -1,0 +1,41 @@
+.pageBtn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 270px;
+    padding: 20px;
+
+}
+
+.pageBtn ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.pageBtn ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-weight: 400;
+    color: #777;
+    border: 1px solid #ccc;
+}
+
+.pageBtn ul li .pgClick {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #777;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.pageBtn ul li .pgClick:hover {
+    background: var(--pointColor);
+}

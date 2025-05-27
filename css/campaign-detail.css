@@ -22,12 +22,9 @@
     .subTitle {
         margin: 60px 0 0 0;
         font-size: 24px;
-        font-weight: 400;
-    }
-
-    .userName span {
         font-weight: 700;
     }
+
 
     .stateBox {
         display: flex;
@@ -119,12 +116,21 @@
     .ExperienceBtn {
         width: 160px;
         height: 60px;
-        font-size: var(--text);
+        font-size: 16px;
         font-weight: 600;
-        background-color: var(--pointColor);
+        background: #00ffD4;
+        /* base color */
+        color: #000;
+        /* text color */
         border: none;
         border-radius: 10px;
         cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+        transition: 0.3s;
     }
 
     .ExperienceBtn:hover {
@@ -132,48 +138,105 @@
         transition: 0.3s;
     }
 
+    /* input[type="file"] 전용 스타일 */
+    .ExperienceBtn[type="file"] {
+        position: relative;
+        overflow: hidden;
+    }
 
+    /* 기본 파일 선택 버튼 숨기기 */
+    .ExperienceBtn[type="file"]::-webkit-file-upload-button {
+        display: none;
+    }
 
-    .historyList {
-        padding: 90px 0 0 0;
+    .ExperienceBtn[type="file"]::file-selector-button {
+        display: none;
+    }
+
+    /* "선택된 파일 없음" 텍스트 숨기기 */
+    .ExperienceBtn[type="file"] {
+        color: transparent;
+    }
+
+    /* 커스텀 텍스트 표시 */
+    .ExperienceBtn[type="file"]::before {
+        content: '송장업로드';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: #000;
+        font-weight: 600;
+        font-size: 16px;
+        pointer-events: none;
+        white-space: nowrap;
     }
 
 
+
+
+    .historyList .btnGroup {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 60px 0 0 0;
+    }
+
+    .historyList .btnGroup .upAndDown {
+        display: flex;
+        gap: 20px;
+    }
+
+
+    .campaignTablelist,
     .historyTable {
         width: 100%;
-        text-align: left;
+        margin-top: 40px;
+        text-align: center;
         border-collapse: collapse;
         border-spacing: 0;
+
     }
 
-    .historyTable .historyColumn {
+    .campaignTablelist .columnBox,
+    .historyColumn {
         padding: 20px 0;
     }
 
-    .historyTable .historyColumn th {
+    .campaignTablelist .columnBox,
+    .historyColumn th {
         font-weight: 400;
         padding: 20px 0;
 
         border-bottom: 1px solid #ccc;
     }
 
-    .historyTable .moreView {
-        text-align: right;
+
+    .moreView {
+        position: absolute;
+        right: 0;
+        background: none;
+        border: none;
     }
 
 
-    .historyTable .historyRow .rowLine td {
+
+    .campaignTablelist,
+    .historyTable .rowBox .HistoryLine,
+    .rowLine td {
         padding: 20px 0;
         border-bottom: 1px solid #ccc;
     }
 
 
-    .historyTable .historyRow .rowLine .moreViewBtn {
+
+    .campaignTablelist .rowBox .rowLine .statusDot {
         padding: 5px 20px;
-        text-align: right;
+        text-align: center;
     }
 
-    .historyTable .historyRow .rowLine .moreViewBtn .stateDot {
+    .campaignTablelist .rowBox .rowLine .statusDot .stateDot {
         display: inline-block;
         width: 60px;
         padding: 5px 10px;
@@ -182,6 +245,213 @@
     }
 
 
+    .rowBox .rowLine .statusDot .redDot {
+        background-color: var(--redDotBg);
+        border: 1px solid var(--redDotBorText);
+        color: var(--redDotBorText);
+    }
+
+    .rowBox .rowLine .statusDot .yellowDot {
+        background-color: var(--yellowDotBg);
+        border: 1px solid var(--yellowDotBorText);
+        color: var(--yellowDotBorText);
+    }
+
+    .rowBox .rowLine .statusDot .greenDot {
+        background-color: var(--greenDotBg);
+        border: 1px solid var(--greenDotBorText);
+        color: var(--greenDotBorText);
+    }
+
+    .rowBox .rowLine .statusDot .greyDot {
+        background-color: var(--greyDotBg);
+        border: 1px solid var(--greyDotBorText);
+        color: var(--greyDotBorText);
+    }
+
+    .historyTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        border: 1px solid #ddd;
+    }
+
+    .historyTable th {
+        background: #f8f9fa;
+        padding: 12px 8px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .historyTable td {
+        padding: 8px 6px;
+        border: 1px solid #ddd;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .rowLine:nth-child(even) {
+        background: #f9f9f9;
+    }
+
+
+
+    /* 택배사 드롭박스 스타일 */
+    .courier-dropdown {
+        position: relative;
+        width: 100%;
+        min-width: 120px;
+    }
+
+    .courier-select {
+        width: 100%;
+        max-width: 130px;
+        padding: 6px 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: white;
+        font-size: 13px;
+        cursor: pointer;
+        transition: border-color 0.3s;
+        box-sizing: border-box;
+    }
+
+    .courier-select:focus {
+        outline: none;
+        border-color: #4f46e5;
+        box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+    }
+
+    .courier-select option {
+        padding: 10px;
+    }
+
+    /* 송장번호 입력 필드 스타일 */
+    .postShippingNum {
+        width: 100%;
+        max-width: 140px;
+        padding: 6px 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 13px;
+        transition: border-color 0.3s;
+        box-sizing: border-box;
+    }
+
+    .postShippingNum:focus {
+        outline: none;
+        border-color: #4f46e5;
+        box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+    }
+
+    /* 저장 버튼 스타일 */
+    .save-btn {
+        background: #4f46e5;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+        margin-left: 5px;
+        transition: background 0.3s;
+    }
+
+    .save-btn:hover {
+        background: #4338ca;
+    }
+
+    .save-btn:disabled {
+        background: #9ca3af;
+        cursor: not-allowed;
+    }
+
+    /* 상태 표시 */
+    .delivery-status {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 3px;
+        font-size: 11px;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    .delivery-status.saved {
+        background: #dcfce7;
+        color: #166534;
+    }
+
+    .delivery-status.error {
+        background: #fef2f2;
+        color: #dc2626;
+    }
+
+    /* 로딩 상태 */
+    .loading {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #f3f3f3;
+        border-top: 2px solid #4f46e5;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-left: 5px;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* 테이블 반응형 */
+    @media (max-width: 768px) {
+        .historyTable {
+            font-size: 12px;
+        }
+
+        .historyTable th,
+        .historyTable td {
+            padding: 6px 4px;
+        }
+    }
+
+    /* 알림 토스트 */
+    .toast {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        z-index: 1000;
+        transform: translateX(300px);
+        transition: transform 0.3s ease;
+    }
+
+    .toast.show {
+        transform: translateX(0);
+    }
+
+    .toast.success {
+        background: #10b981;
+    }
+
+    .toast.error {
+        background: #ef4444;
+    }
+
+
+    /* 페이지 버튼 */
 
     .pageBtn {
         position: absolute;
