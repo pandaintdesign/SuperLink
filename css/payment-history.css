@@ -14,7 +14,7 @@ p {
 .paymentHistory .paymentHistory-wrap {
     position: relative;
     margin: 120px auto;
-    padding: 120px 0 0 0;
+    padding: 120px 0;
     width: 1200px;
 }
 
@@ -33,8 +33,9 @@ p {
 }
 
 .paymentHistory-wrap .pointCount .countBox {
+
     width: 380px;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     border: 1px solid #ccc;
 }
@@ -50,7 +51,9 @@ p {
 
 
 .paymentHistory-wrap .pointCount .pointNum {
-    text-align: center;
+    width: 100%;
+    margin: 40px 0 0 0;
+    text-align: right;
     color: #53E0C5;
     font-size: 48px;
     font-style: normal;
@@ -86,4 +89,32 @@ p {
     height: 50px;
     border: 1px solid #ccc;
     text-align: center;
+}
+
+
+.pointTable-wrap .pointRow .rowLine .chargeState .chargePoint {
+    padding: 5px 20px;
+    background-color: var(--greenDotBg);
+    color: var(--greenDotBorText);
+    border: 1px solid var(--greenDotBorText);
+    border-radius: 50px;
+}
+
+
+.pointTable-wrap .pointRow .rowLine .chargeState .usePoint {
+    padding: 5px 20px;
+    background-color: var(--redDotBg);
+    color: var(--redDotBorText);
+    border: 1px solid var(--redDotBorText);
+    border-radius: 50px;
+}
+
+.plusPoint {
+    color: var(--greenDotBorText);
+    font-weight: 700;
+}
+
+.minusPoint {
+    color: var(--redDotBorText);
+    font-weight: 700;
 }
