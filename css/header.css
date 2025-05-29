@@ -66,4 +66,5 @@
 
 .header .topMenu ul li .login:hover {
     background-color: #24EDCB;
+    transition: 0.3s;
 }

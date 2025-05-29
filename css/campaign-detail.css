@@ -189,26 +189,25 @@
     }
 
 
-    .campaignTablelist,
-    .historyTable {
+    .ListTable {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+
+    .ListTable .columnLine {
         width: 100%;
         margin-top: 40px;
         text-align: center;
-        border-collapse: collapse;
-        border-spacing: 0;
+
 
     }
 
-    .campaignTablelist .columnBox,
-    .historyColumn {
-        padding: 20px 0;
-    }
 
-    .campaignTablelist .columnBox,
-    .historyColumn th {
+    .ListTable .columnLine th {
         font-weight: 400;
         padding: 20px 0;
-
         border-bottom: 1px solid #ccc;
     }
 
@@ -222,8 +221,7 @@
 
 
 
-    .campaignTablelist,
-    .historyTable .rowBox .HistoryLine,
+    .ListTable .rowBox .HistoryLine,
     .rowLine td {
         padding: 20px 0;
         border-bottom: 1px solid #ccc;
@@ -231,12 +229,12 @@
 
 
 
-    .campaignTablelist .rowBox .rowLine .statusDot {
+    .ListTable .rowBox .rowLine .statusDot {
         padding: 5px 20px;
         text-align: center;
     }
 
-    .campaignTablelist .rowBox .rowLine .statusDot .stateDot {
+    .ListTable .rowBox .rowLine .statusDot .stateDot {
         display: inline-block;
         width: 60px;
         padding: 5px 10px;

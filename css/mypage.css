@@ -47,7 +47,7 @@
  .editArea .userData,
  .editArea .dataEditBtn {
      width: calc(100%/2);
-     padding: 20px 30px;
+     padding: 0px 30px;
  }
 
  .editArea .userData {
@@ -57,7 +57,7 @@
 
  .editArea .userData li {
      font-size: 18px;
-     line-height: 36px;
+     line-height: 30px;
  }
 
  .editArea .userData .listTitle {
@@ -68,59 +68,77 @@
      border-bottom: 1px solid #000;
  }
 
- .editArea .dataEditBtn li {
-     width: 100%;
-     height: 60px;
-     margin: 0 0 20px 0;
-     text-align: center;
+ .dataEditBtn .point {
+     width: auto;
+     height: calc(250px / 3 - 20px);
+     padding: 20px;
+     background: #e4fffa;
+     border: 1px solid #028183;
+     border-radius: 10px;
  }
 
- .editArea .dataEditBtn li a {
+
+ .pointScore {
+     display: flex;
+     justify-content: flex-end;
+     font-size: 36px;
+     font-weight: 700;
+ }
+
+
+ .editBtn {
+     display: flex;
+     justify-content: space-between;
+     gap: 30px;
+     margin: 20px 0;
+ }
+
+ .editBtn {
      display: flex;
      justify-content: center;
      align-items: center;
      width: 100%;
-     height: 60px;
+     height: calc(250px / 3 - 35px);
+ }
+
+ .editBtn a {
+     text-decoration: none;
      color: #000;
-     border: 1px solid #ccc;
-     border-radius: 10px;
  }
 
- .editArea .dataEditBtn .pointArea {
+ .editBtn .tabBtn {
      display: flex;
-     justify-content: space-between;
-     gap: 20px;
-     width: 100%;
- }
-
-
- .editArea .dataEditBtn .pointArea .point {
-     display: flex;
-     justify-content: space-around;
+     justify-content: center;
      align-items: center;
      width: 100%;
-     height: auto;
-     text-align: left;
-     background-color: #cbfff6;
-     border: 1px solid #ccc;
-     border-radius: 10px;
- }
-
- .pointScore {
-     font-size: var(--subTitle);
-     font-weight: 700;
- }
-
- .editArea .dataEditBtn .pointCharge {
-     width: 50%;
-     font-weight: 700;
+     height: 100%;
      background-color: var(--pointColor);
+     font-size: 18px;
+     border-radius: 10px;
+ }
+
+ .editBtn .infomationClick:hover {
+     background-color: #0cb99c;
+     color: #fff;
+     border-color: #fff;
+     border: 2px solid #fff;
+     box-shadow: 0 4px 12px rgba(6, 108, 91, 0.4);
+     transition: 0.3s;
+ }
+
+ .editBtn .editData {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     border: 1px solid #ccc;
+     font-size: 18px;
      border-radius: 10px;
  }
 
 
-
- .categoryBtn {
+ .editBtn .tabBtn:hover .categoryBtn {
      width: 100%;
      height: 120px;
  }
@@ -134,7 +152,8 @@
 
 
  .categoryBtn ul li {
-     width: 140px;
+     width: 180px;
+     height: 60px;
      text-align: center;
      background-color: var(--pointColor);
      border-radius: 10px;
@@ -142,18 +161,23 @@
 
 
  .categoryBtn ul li button {
-     width: 140px;
+     width: 180px;
+     height: 60px;
+     font-size: 18px;
      padding: 10px 20px;
      background: none;
      border: none;
+     border-radius: 10px;
      cursor: pointer;
  }
 
 
  .categoryBtn ul li button:hover {
-     font-weight: 600;
-     background-color: #24EDCB;
-     border-radius: 10px;
+     background-color: #0cb99c;
+     color: #fff;
+     border: 2px solid #fff;
+     box-shadow: 0 4px 12px rgba(6, 108, 91, 0.4);
+     transform: translateY(-2px);
      transition: 0.3s;
  }
 
@@ -185,8 +209,13 @@
      border-bottom: 1px solid #ccc;
  }
 
- .historyTable .moreView {
+ .historyList .moreView {
      text-align: right;
+     cursor: pointer;
+ }
+
+ .historyList .moreView:hover {
+     font-weight: 600;
  }
 
  .rowBox .rowLine td {

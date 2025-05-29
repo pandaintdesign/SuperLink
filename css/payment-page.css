@@ -1,0 +1,369 @@
+.payMent {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+}
+
+
+.payMent .payMent-wrap {
+    position: relative;
+    margin: 120px auto;
+    padding: 120px 0 0 0;
+    width: 1200px;
+}
+
+
+.payMent .payMent-wrap h3 {
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.payMentPlan {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 0 0;
+}
+
+.payMentPlan .planBox {
+    width: 300px;
+    margin: 0 20px 20px 0;
+    padding: 30px;
+    background: #e4fffa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+h4 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.planCaption {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.planCaption .price {
+    font-size: 36px;
+    font-weight: 700;
+    color: #53E0C5;
+}
+
+
+.planCaption .price .won {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.square {
+    color: #53E0C5;
+}
+
+.planService li {
+    height: 30px;
+    font-size: 16px;
+    line-height: 2rem;
+}
+
+.selectPrice {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 0 0;
+}
+
+.selectPrice .planPriceList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectPrice .planPriceList li {
+    width: calc(1200px / 4);
+    margin: 0 20px 0 20px;
+}
+
+.selectPrice .planPriceList li .wonPrice {
+    width: 100%;
+    height: 80px;
+    background-color: #ccc;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.selectPrice .planPriceList li .wonPrice:hover {
+    background-color: #24EDCB;
+    transition: 0.3s;
+}
+
+#customPayment {
+    display: none;
+}
+
+.selectPrice .blank-wrapper {
+    position: relative;
+    display: none;
+    width: calc(1200px - 40px);
+    margin: 20px auto;
+}
+
+.selectPrice .blank-wrapper .blankCheck {
+    width: 100%;
+    height: 50px;
+    padding: 0 40px 0 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.selectPrice .blank-wrapper::after {
+    content: "원";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.paymentMethod {
+    margin: 60px 0 0 0;
+}
+
+.paymentMethod .payMode {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paymentMethod .payMode .payList {
+    width: calc(1200px / 4);
+    margin: 0 20px 0 20px;
+}
+
+.paymentMethod .payMode .payList button {
+    width: 100%;
+    height: 80px;
+    background-color: #ccc;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.paymentMethod .payMode .payList button:hover {
+    background-color: #04c4a4;
+    transition: 0.3s;
+}
+
+/* 활성화된 결제수단 버튼 */
+.paymentMethod .payMode .payList button.active {
+    background-color: #0cb99c;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 0 4px 12px rgba(15, 182, 154, 0.4);
+    transform: translateY(-2px);
+}
+
+/* 금액 선택 버튼 활성화 스타일 */
+.selectPrice .planPriceList li .wonPrice.active {
+    background-color: #0cb99c;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 12px rgba(15, 182, 154, 0.4);
+    transform: translateY(-2px);
+}
+
+.sendPayment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 60px;
+    margin: 80px auto;
+    font-size: 18px;
+    font-weight: 700;
+    background: #24EDCB;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.sendPayment:hover {
+    background-color: #028183;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 12px rgba(15, 182, 154, 0.4);
+    ;
+}
+
+
+
+/* 로딩 모달 */
+.loading-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.loading-content {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--pointColor);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 결제 완료 모달 */
+.complete-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.complete-content {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--pointColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    margin: 0 auto 20px;
+    font-weight: bold;
+}
+
+.complete-content h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.payment-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.payment-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.highlight {
+    font-weight: 600;
+    color: #04c4a4;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background: #04c4a4;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: #24EDCB;
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn.secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+.btn.close {
+    background: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn.close:hover {
+    background: #e9ecef;
+}
