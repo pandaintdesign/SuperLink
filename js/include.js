@@ -1,19 +1,45 @@
+// 기존 코드 앞에 추가
+window.addEventListener("unhandledrejection", function (event) {
+  // 브라우저 확장 프로그램 오류 무시
+  if (
+    event.reason &&
+    event.reason.message &&
+    event.reason.message.includes("message channel closed")
+  ) {
+    event.preventDefault();
+    return;
+  }
+});
+
 //header, footer 공통영역으로 분리
-
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("./header.html") // 루트 기준이므로 슬래시(/)로 시작
-    .then((res) => res.text())
-    .then((data) => (document.getElementById("header").innerHTML = data));
+  const headerElement = document.getElementById("header");
+  const quickBarElement = document.getElementById("quickBar");
+  const footerElement = document.getElementById("footer");
+  const pageElement = document.getElementById("page");
 
-  fetch("./quick.html")
-    .then((res) => res.text())
-    .then((data) => (document.getElementById("quickBar").innerHTML = data));
+  if (headerElement) {
+    fetch("./header.html")
+      .then((res) => res.text())
+      .then((data) => (headerElement.innerHTML = data));
+  }
 
-  fetch("./footer.html")
-    .then((res) => res.text())
-    .then((data) => (document.getElementById("footer").innerHTML = data));
+  if (quickBarElement) {
+    fetch("./quick.html")
+      .then((res) => res.text())
+      .then((data) => (quickBarElement.innerHTML = data));
+  }
 
-  fetch("./page.html")
-    .then((res) => res.text())
-    .then((data) => (document.getElementById("page").innerHTML = data));
+  if (footerElement) {
+    fetch("./footer.html")
+      .then((res) => res.text())
+      .then((data) => (footerElement.innerHTML = data));
+  }
+
+  // page 요소가 있는 페이지에서만 실행
+  if (pageElement) {
+    fetch("./page.html")
+      .then((res) => res.text())
+      .then((data) => (pageElement.innerHTML = data));
+  }
 });
