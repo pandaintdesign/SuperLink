@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
     <link rel="stylesheet" href="./css/mypage.css" />
-
     <link rel="stylesheet" href="./css/quick.css" />
     <link rel="stylesheet" href="./css/page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -15,7 +14,6 @@
   <body>
     <!-- 헤더 -->
     <div id="header"></div>
-    <div id="quickBar"></div>
 
     <section id="mypage" class="mypage">
       <div class="mypage-wrap">
@@ -28,6 +26,10 @@
             <ul class="userData">
               <li class="listTitle">가입유형</li>
               <li>기업명 | <span class="company">(주)판다인</span></li>
+              <li>가입자명 | <span class="nameArea">홍길동</span></li>
+              <li>
+                사업자등록번호 | <span class="joinDay">000-00-00000</span>
+              </li>
               <li>가입일 | <span class="joinDay">0000-00-00</span></li>
               <li>
                 이메일 | <span class="emailAddress">pandain@pandain.co.kr</span>
@@ -39,24 +41,37 @@
                 >
               </li>
             </ul>
-            <ul class="dataEditBtn">
-              <li class="pointArea">
-                <p class="point">
-                  현재 포인트<span class="pointScore">0,000,000</span>
-                </p>
-                <a href="#" class="pointCharge">포인트 충전</a>
-              </li>
-              <li><a href="#">회원정보 수정</a></li>
-              <li><a href="#">비밀번호 변경</a></li>
-            </ul>
+            <div class="dataEditBtn">
+              <p class="point">
+                현재 포인트<span class="pointScore">0,000,000P</span>
+              </p>
+              <div class="editBtn pointTap">
+                <a href="payment-page.html" class="infomationClick tabBtn"
+                  >포인트 충전</a
+                >
+                <a href="payment-history.html" class="infomationClick tabBtn"
+                  >충전내역 조회</a
+                >
+              </div>
+              <div class="editBtn userDataUpdate">
+                <a href="#" class="infomationClick editData">회원정보 수정</a>
+                <a href="#" class="infomationClick editData">비밀번호 변경</a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="categoryBtn">
           <ul>
-            <li><button type="button">캠페인 내역</button></li>
-            <li><button type="button">충전/ 결제 내역</button></li>
-            <li><button type="button">문의 내역</button></li>
+            <li>
+              <button type="button" class="campaignHistory">캠페인 내역</button>
+            </li>
+            <li>
+              <button type="button" class="paymentHistory">
+                충전/ 결제 내역
+              </button>
+            </li>
+            <li><button type="button" class="faqHistory">문의 내역</button></li>
           </ul>
         </div>
         <!-- 진행현황 -->
@@ -169,5 +184,6 @@
     <div id="footer"></div>
     <!-- JS -->
     <script src="js/include.js"></script>
+    <script src="js/mypage.js"></script>
   </body>
 </html>

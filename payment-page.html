@@ -7,21 +7,136 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
     <link rel="stylesheet" href="./css/payment-page.css" />
-
     <link rel="stylesheet" href="./css/quick.css" />
-    <link rel="stylesheet" href="./css/page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <!-- 헤더 -->
     <div id="header"></div>
-    <div id="quickBar"></div>
 
-    <section><div id="page"></div></section>
+    <section id=" " class="payMent">
+      <div class="payMent-wrap">
+        <h3>포인트충전</h3>
+        <div class="payMentPlan">
+          <div class="planBox planOne">
+            <h4>Basic</h4>
+            <ul class="planService">
+              <li><span class="square">&#9632;</span>&nbsp;방문자 ~299명</li>
+              <li>
+                <span class="square">&#9632;</span>&nbsp;요약설명을 넣어주세요
+              </li>
+              <li>
+                <span class="square">&#9632;</span>&nbsp;요약설명을 넣어주세요
+              </li>
+              <li>
+                <span class="square">&#9632;</span>&nbsp;요약설명을 넣어주세요
+              </li>
+            </ul>
+            <div class="planCaption">
+              <p class="price">10,000 <span class="won">&#8361;</span></p>
+            </div>
+          </div>
+          <div class="planBox planTwo">
+            <h4>Pro</h4>
+            <ul class="planService">
+              <li><span class="square">&#9632;</span>&nbsp;방문자 300~999명</li>
+              <li>
+                <span class="square">&#9632;</span>&nbsp;요약설명을 넣어주세요
+              </li>
+              <li>
+                <span class="square">&#9632;</span>&nbsp;요약설명을 넣어주세요
+              </li>
+              <li>
+                <span class="square">&#9632;</span>&nbsp;요약설명을 넣어주세요
+              </li>
+            </ul>
+            <div class="planCaption">
+              <p class="price">20,000 <span class="won">&#8361;</span></p>
+            </div>
+          </div>
+          <div class="planBox planThree">
+            <h4>Premium</h4>
+            <ul class="planService">
+              <li>
+                <span class="square">&#9632;</span>&nbsp;방문자 1,000명 이상
+              </li>
+              <li>
+                <span class="square">&#9632;</span>&nbsp;요약설명을 넣어주세요
+              </li>
+              <li>
+                <span class="square">&#9632;</span>&nbsp;요약설명을 넣어주세요
+              </li>
+              <li>
+                <span class="square">&#9632;</span>&nbsp;요약설명을 넣어주세요
+              </li>
+            </ul>
+            <div class="planCaption">
+              <p class="price">30,000 <span class="won">&#8361;</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- 가격 -->
+        <div class="selectPrice">
+          <h4>충전 금액 선택</h4>
+          <ul class="planPriceList">
+            <li>
+              <button type="button" id="won100k" class="wonPrice">
+                10만원
+              </button>
+            </li>
+            <li>
+              <button type="button" id="won300k" class="wonPrice">
+                30만원
+              </button>
+            </li>
+            <li>
+              <button type="button" id="won1000k" class="wonPrice">
+                100만원
+              </button>
+            </li>
+            <li>
+              <button type="button" id="customPaymentBtn" class="wonPrice">
+                직접 입력
+              </button>
+            </li>
+          </ul>
+          <div id="customPayment" class="blank-wrapper">
+            <input
+              type="number"
+              id="blankCheck"
+              class="blankCheck"
+              placeholder="가격을 입력해주세요."
+              step="1000"
+            />
+          </div>
+        </div>
+        <div class="paymentMethod">
+          <h4>결제수단 선택</h4>
+          <ul class="payMode">
+            <li class="payList">
+              <button type="button" class="payBtn creditCard">신용카드</button>
+            </li>
+            <li class="payList">
+              <button type="button" class="payBtn bankTobank">계좌이체</button>
+            </li>
+            <li class="payList">
+              <button type="button" class="payBtn autoTobank">자동이체</button>
+            </li>
+            <li class="payList">
+              <button type="button" class="payBtn PartnersPayment">
+                간편결제
+              </button>
+            </li>
+          </ul>
+        </div>
+        <button type="submit" class="sendPayment">충전하기</button>
+      </div>
+    </section>
     <!-- 푸터 -->
     <div id="footer"></div>
 
     <!-- JS -->
     <script src="js/include.js"></script>
+    <script src="js/payment-page.js"></script>
   </body>
 </html>
