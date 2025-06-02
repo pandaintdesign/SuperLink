@@ -190,6 +190,27 @@ textarea {
     box-sizing: border-box;
 }
 
+.addToFile {
+    margin: 0 0 40px 0;
+}
+
+.fileUpload-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.file-info {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.fileUpload .file-button {
+    width: 200px;
+}
+
+
 /* 제출 버튼 */
 .submit-area {
     text-align: center;
