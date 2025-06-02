@@ -45,3 +45,31 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("캠페인 신청이 완료되었습니다!");
   });
 });
+
+//파일업로드 용량 설정
+
+document.getElementById("fileUpload").addEventListener("change", function (e) {
+  const file = e.target.files[0];
+  const maxSize = 10 * 1024 * 1024; // 10MB (바이트 단위)
+
+  if (file) {
+    if (file.size > maxSize) {
+      alert("파일 크기가 10MB를 초과합니다. 더 작은 파일을 선택해주세요.");
+      // 파일 선택 초기화
+      e.target.value = "";
+      return;
+    }
+
+    // 파일 크기가 적절한 경우
+    console.log(
+      `선택된 파일: ${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB)`
+    );
+
+    // 파일명 표시 (선택사항)
+    const fileNameSpan = document.getElementById("fileName");
+    if (fileNameSpan) {
+      fileNameSpan.textContent = file.name;
+      fileNameSpan.classList.add("selected");
+    }
+  }
+});
