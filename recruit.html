@@ -210,7 +210,7 @@
             <div class="guide-content">
               <h4>가이드</h4>
               <div class="keywordArea">
-                <div>
+                <div class="main-guide">
                   <label for="mainKeyword">메인키워드</label>
                   <input
                     type="text"
@@ -220,7 +220,7 @@
                     placeholder="메인키워드를 입력해주세요"
                   />
                 </div>
-                <div>
+                <div class="sub-guide">
                   <label for="subKeyword">서브키워드</label>
                   <input
                     type="text"
@@ -231,6 +231,17 @@
                   />
                 </div>
               </div>
+              <div class="addToFile">
+                <label for="fileUpload">첨부파일</label>
+                <input
+                  type="file"
+                  id="fileUpload"
+                  name="fileUpload"
+                  class="fileUpload-input"
+                />
+                <span class="file-info">최대 10MB 까지 업로드 가능</span>
+              </div>
+
               <label for="reviewGuide">후기 작성 가이드</label>
               <textarea
                 id="reviewGuide"
