@@ -18,12 +18,16 @@
     <section id="campaign-detail" class="campaign-detail">
       <div class="campaign-detail-wrap">
         <h3>진행현황</h3>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 623a4fa07e03d621ee5ded7d7f3e23d8f6b4114a
         <!-- 캠페인 리스트 -->
         <div class="campaignList">
           <h4 class="subTitle">캠페인 내역</h4>
           <table class="ListTable campaignTablelist">
             <thead class="columnLine columnBox">
+<<<<<<< HEAD
               <tr>
                 <th>캠페인 명</th>
                 <th>기간</th>
@@ -32,16 +36,59 @@
             </thead>
             <tbody class="rowBox">
               <!-- 서버에서 받은 리스트를 JS로 렌더링 -->
+=======
+              <th>캠페인 명</th>
+              <th>기간</th>
+              <th>진행현황</th>
+            </thead>
+            <tbody class="rowBox">
+              <tr class="rowLine HistoryLine">
+                <td class="campeinName row-cell">A브랜드 캠페인</td>
+                <td class="stardDate row-cell">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot row-cell">
+                  <span class="stateDot redDot">진행예정</span>
+                </td>
+              </tr>
+              <tr class="rowLine HistoryLine">
+                <td class="campeinName row-cell">A브랜드 캠페인</td>
+                <td class="stardDate row-cell">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot row-cell">
+                  <span class="stateDot yellowDot">진행중</span>
+                </td>
+              </tr>
+              <tr class="rowLine HistoryLine">
+                <td class="campeinName row-cell">A브랜드 캠페인</td>
+                <td class="stardDate row-cell">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot row-cell">
+                  <span class="stateDot greenDot">진행완료</span>
+                </td>
+              </tr>
+              <tr class="rowLine HistoryLine">
+                <td class="campeinName row-cell">A브랜드 캠페인</td>
+                <td class="stardDate row-cell">0000-00-00 ~ 0000-00-00</td>
+                <td class="statusDot row-cell">
+                  <span class="stateDot greyDot">보류</span>
+                </td>
+              </tr>
+>>>>>>> 623a4fa07e03d621ee5ded7d7f3e23d8f6b4114a
             </tbody>
           </table>
           <button type="button" class="moreView">더보기&gt;</button>
         </div>
+<<<<<<< HEAD
 
         <!-- 상세내역 -->
         <div class="subTitle">
           <h4 class="userName sectionTitle">
             <span class="brandName">브랜드명</span> |
             <span class="bloggerCategory">체험단</span>
+=======
+        <!-- 상세내역 -->
+        <div class="subTitle">
+          <h4 class="userName sectionTitle">
+            <span class="brandName">A브랜드</span> |
+            <span class="bloggerCategory">신상품 체험단</span>
+>>>>>>> 623a4fa07e03d621ee5ded7d7f3e23d8f6b4114a
           </h4>
         </div>
 
@@ -101,6 +148,7 @@
               </button>
             </div>
           </div>
+<<<<<<< HEAD
 
           <table class="ListTable historyTable">
             <thead class="historyColumn columnLine">
@@ -117,6 +165,21 @@
             </thead>
             <tbody class="historyRow rowBox" id="deliveryTableBody">
               <!-- JS에서 동적 생성 -->
+=======
+          <table class="ListTable historyTable">
+            <thead class="historyColumn columnLine">
+              <th>블로거명</th>
+              <th>지수</th>
+              <th>이름</th>
+              <th>전화번호</th>
+              <th>주소</th>
+              <th>택배사</th>
+              <th>송장번호</th>
+              <th>관리</th>
+            </thead>
+            <tbody class="historyRow rowBox" id="deliveryTableBody">
+              <!-- JavaScript로 동적 생성 -->
+>>>>>>> 623a4fa07e03d621ee5ded7d7f3e23d8f6b4114a
             </tbody>
           </table>
           <div id="page"></div>

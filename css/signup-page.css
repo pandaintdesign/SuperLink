@@ -63,7 +63,11 @@
         width: calc(600px / 3);
     }
 
+<<<<<<< HEAD
     .duplicate {
+=======
+    .PersonalInfo .emailArea .duplicate {
+>>>>>>> 623a4fa07e03d621ee5ded7d7f3e23d8f6b4114a
         width: 120px;
         height: 40px;
         padding: 5px;

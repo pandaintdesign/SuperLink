@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (footerElement) {
     fetch("./footer.html")
       .then((res) => res.text())
+<<<<<<< HEAD
       .then((data) => {
         footerElement.innerHTML = data;
 
@@ -41,6 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
         script.src = "js/login.js";
         document.body.appendChild(script);
       });
+=======
+      .then((data) => (footerElement.innerHTML = data));
+>>>>>>> 623a4fa07e03d621ee5ded7d7f3e23d8f6b4114a
   }
 
   // page 요소가 있는 페이지에서만 실행

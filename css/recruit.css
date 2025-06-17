@@ -82,6 +82,7 @@ select {
 /* textarea 스타일 */
 textarea {
     width: 100%;
+<<<<<<< HEAD
     min-height: 300px;
     resize: vertical;
     box-sizing: border-box;
@@ -91,6 +92,17 @@ textarea {
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 4px;
+=======
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+>>>>>>> 623a4fa07e03d621ee5ded7d7f3e23d8f6b4114a
 }
 
 /* 캠페인 입력 필드들 */
