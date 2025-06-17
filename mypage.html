@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
     <link rel="stylesheet" href="./css/mypage.css" />
+    <link rel="stylesheet" href="./css/quick.css" />
+    <link rel="stylesheet" href="./css/page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
@@ -24,6 +26,10 @@
             <ul class="userData">
               <li class="listTitle">가입유형</li>
               <li>기업명 | <span class="company">(주)판다인</span></li>
+              <li>가입자명 | <span class="nameArea">홍길동</span></li>
+              <li>
+                사업자등록번호 | <span class="joinDay">000-00-00000</span>
+              </li>
               <li>가입일 | <span class="joinDay">0000-00-00</span></li>
               <li>
                 이메일 | <span class="emailAddress">pandain@pandain.co.kr</span>
@@ -35,24 +41,37 @@
                 >
               </li>
             </ul>
-            <ul class="dataEditBtn">
-              <li class="pointArea">
-                <p class="point">
-                  현재 포인트<span class="pointScore">0,000,000</span>
-                </p>
-                <a href="#" class="pointCharge">포인트 충전</a>
-              </li>
-              <li><a href="#">회원정보 수정</a></li>
-              <li><a href="#">비밀번호 변경</a></li>
-            </ul>
+            <div class="dataEditBtn">
+              <p class="point">
+                현재 포인트<span class="pointScore">0,000,000P</span>
+              </p>
+              <div class="editBtn pointTap">
+                <a href="payment-page.html" class="infomationClick tabBtn"
+                  >포인트 충전</a
+                >
+                <a href="payment-history.html" class="infomationClick tabBtn"
+                  >충전내역 조회</a
+                >
+              </div>
+              <div class="editBtn userDataUpdate">
+                <a href="#" class="infomationClick editData">회원정보 수정</a>
+                <a href="#" class="infomationClick editData">비밀번호 변경</a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="categoryBtn">
           <ul>
-            <li><button type="button">캠페인 내역</button></li>
-            <li><button type="button">충전/ 결제 내역</button></li>
-            <li><button type="button">문의 내역</button></li>
+            <li>
+              <button type="button" class="campaignHistory">캠페인 내역</button>
+            </li>
+            <li>
+              <button type="button" class="paymentHistory">
+                충전/ 결제 내역
+              </button>
+            </li>
+            <li><button type="button" class="faqHistory">문의 내역</button></li>
           </ul>
         </div>
         <!-- 진행현황 -->
@@ -62,7 +81,7 @@
             <thead class="columnBox">
               <th>캠페인 명</th>
               <th>기간</th>
-              <th class="moreView"><a href="">더보기&gt;</a></th>
+              <th>진행현황</th>
             </thead>
             <tbody class="rowBox">
               <tr class="rowLine HistoryLine">
@@ -95,6 +114,7 @@
               </tr>
             </tbody>
           </table>
+          <button type="button" class="moreView">더보기&gt;</button>
         </div>
         <!-- 문의내역 -->
         <div class="faqList">
@@ -105,7 +125,7 @@
               <th>카테고리</th>
               <th>문의제목</th>
               <th>등록일</th>
-              <th class="">진행현황</th>
+              <th>진행현황</th>
             </thead>
             <tbody class="rowBox">
               <tr class="rowLine faqLine">
@@ -144,20 +164,19 @@
                   <span class="stateDot greenDot">진행완료</span>
                 </td>
               </tr>
+              <tr class="rowLine">
+                <td class="listNum">00</td>
+                <td class="faqCategoryList">셀러</td>
+                <td class="faqTitle">문의제목을 입력하세요</td>
+                <td class="faqUploadDate">0000.00.00</td>
+                <td class="statusDot">
+                  <span class="stateDot greenDot">진행완료</span>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
-        <div class="pageBtn">
-          <ul>
-            <li><button type="button" class="pgClick">◀</button></li>
-            <li><button type="button" class="pgClick">1</button></li>
-            <li><button type="button" class="pgClick">2</button></li>
-            <li><button type="button" class="pgClick">3</button></li>
-            <li><button type="button" class="pgClick">4</button></li>
-            <li><button type="button" class="pgClick">5</button></li>
-            <li><button type="button" class="pgClick">▶</button></li>
-          </ul>
-        </div>
+        <div id="page"></div>
       </div>
     </section>
 
@@ -165,5 +184,6 @@
     <div id="footer"></div>
     <!-- JS -->
     <script src="js/include.js"></script>
+    <script src="js/mypage.js"></script>
   </body>
 </html>

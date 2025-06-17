@@ -1,3 +1,4 @@
+<!-- login-page.html -->
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -7,20 +8,22 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
     <link rel="stylesheet" href="./css/login-page.css" />
+    <link rel="stylesheet" href="./css/quick.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <!-- 헤더 -->
     <div id="header"></div>
     <div class="mainBannerSpacer"></div>
+
     <!-- 로그인 폼 -->
     <section id="login-box" class="login-box">
       <div class="login-wrap">
         <div class="login-title">
           <h3>로그인</h3>
           <p>
-            상위노출 체험단 플랫폼에 오신 것을 환영합니다!<br />계정 정보를
-            입력하여 로그인 해주세요.
+            상위노출 체험단 플랫폼에 오신 것을 환영합니다!<br />
+            계정 정보를 입력하여 로그인 해주세요.
           </p>
         </div>
         <div class="login-input">
@@ -48,7 +51,8 @@
           <button type="button" id="loginkey" class="loginkey">로그인</button>
         </div>
         <p class="joinUrl">
-          아직 회원이 아니신가요?<a href="join.html">회원가입하기</a>
+          아직 회원이 아니신가요?
+          <a href="signup-page.html">회원가입하기</a>
         </p>
       </div>
     </section>
@@ -56,7 +60,9 @@
     <!-- 푸터 -->
     <div id="footer"></div>
 
-    <!-- JS -->
+    <!-- 공통 include -->
     <script src="js/include.js"></script>
+    <!-- RSA 암호화를 위한 JSEncrypt 로드 -->
+    <script src="https://cdn.jsdelivr.net/npm/jsencrypt@3.2.1/bin/jsencrypt.min.js"></script>
   </body>
 </html>

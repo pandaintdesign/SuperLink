@@ -7,13 +7,95 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
     <link rel="stylesheet" href="./css/payment-history.css" />
+
+    <link rel="stylesheet" href="./css/quick.css" />
+    <link rel="stylesheet" href="./css/page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <!-- 헤더 -->
     <div id="header"></div>
 
-    <section></section>
+    <section id="paymentHistory" class="paymentHistory">
+      <div class="paymentHistory-wrap">
+        <h3>충전 / 결제 내역</h3>
+        <div class="pointCount">
+          <div class="countBox chargePoint">
+            <p>총 충전 포인트</p>
+            <p class="pointNum">000,000<span class="pointUnit">P</span></p>
+          </div>
+          <div class="countBox usedPoint">
+            <p>총 사용 포인트</p>
+            <p class="pointNum">000,000<span class="pointUnit">P</span></p>
+          </div>
+          <div class="countBox remaining-points">
+            <p>잔여 포인트</p>
+            <p class="pointNum">000,000<span class="pointUnit">P</span></p>
+          </div>
+        </div>
+        <!-- 내역테이블 -->
+        <div class="pointTable">
+          <table class="pointTable-wrap">
+            <thead class="pointCol">
+              <th>날짜</th>
+              <th>구분</th>
+              <th>내용</th>
+              <th>포인트</th>
+              <th>결제방법</th>
+            </thead>
+            <tbody class="pointRow">
+              <tr class="rowLine">
+                <td class="chargeDate">0000.00.00</td>
+                <td class="chargeState">
+                  <span class="chargePoint">충전</span>
+                </td>
+                <td class="chargeHistory">포인트충전</td>
+                <td class="point-transaction plusPoint">+100,000P</td>
+                <td class="paymentType">신용카드</td>
+              </tr>
+              <tr class="rowLine">
+                <td class="chargeDate">0000.00.00</td>
+                <td class="chargeState"><span class="usePoint">사용</span></td>
+                <td class="chargeHistory">포인트충전</td>
+                <td class="point-transaction minusPoint">-100,000P</td>
+                <td class="paymentType">신용카드</td>
+              </tr>
+              <tr class="rowLine">
+                <td class="chargeDate">0000.00.00</td>
+                <td class="chargeState"><span class="usePoint">사용</span></td>
+                <td class="chargeHistory">A브랜드 캠페인</td>
+                <td class="point-transaction minusPoint">-50,000P</td>
+                <td class="paymentType">신용카드</td>
+              </tr>
+              <tr class="rowLine">
+                <td class="chargeDate">0000.00.00</td>
+                <td class="chargeState"><span class="usePoint">사용</span></td>
+                <td class="chargeHistory">A브랜드 캠페인</td>
+                <td class="point-transaction minusPoint">-50,000P</td>
+                <td class="paymentType">신용카드</td>
+              </tr>
+              <tr class="rowLine">
+                <td class="chargeDate">0000.00.00</td>
+                <td class="chargeState"><span class="usePoint">사용</span></td>
+                <td class="chargeHistory">A브랜드 캠페인</td>
+                <td class="point-transaction minusPoint">-50,000P</td>
+                <td class="paymentType">신용카드</td>
+              </tr>
+              <tr class="rowLine">
+                <td class="chargeDate">0000.00.00</td>
+                <td class="chargeState">
+                  <span class="chargePoint">충전</span>
+                </td>
+                <td class="chargeHistory">포인트충전</td>
+                <td class="point-transaction plusPoint">+50,000P</td>
+                <td class="paymentType">신용카드</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="page"></div>
+      </div>
+    </section>
     <!-- 푸터 -->
     <div id="footer"></div>
 

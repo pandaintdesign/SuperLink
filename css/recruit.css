@@ -1,0 +1,263 @@
+p {
+    width: 147px;
+    line-height: 40px;
+}
+
+
+.recruit {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+}
+
+
+.recruit .recruit-wrap {
+    position: relative;
+    margin: 120px auto;
+    padding: 120px 0 0 0;
+    width: 1200px;
+}
+
+
+.recruit .recruit-wrap h3 {
+    text-align: center;
+    font-weight: 800;
+}
+
+/* 기본 폼 스타일링 */
+.recruit-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recruit-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.recruitArea>div {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 라벨 스타일 */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* 인풋 스타일 */
+input[type="text"],
+input[type="url"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* textarea 스타일 */
+textarea {
+    width: 100%;
+    min-height: 300px;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-family: 'Pretendard Variable';
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* 캠페인 입력 필드들 */
+.campaignInput {
+    margin-bottom: 20px;
+}
+
+.campaignInput.pageUrl input {
+    border: 1px solid #ddd;
+}
+
+/* 라디오 버튼 스타일 */
+.checkedagree {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.checkedagree input[type="radio"] {
+    margin-right: 8px;
+}
+
+.checkedagree label {
+    display: inline;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* 버튼 그룹 스타일 */
+.selectArea,
+.selectPeople,
+.visitPeople ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.selectArea li,
+.selectPeople li,
+.visitPeople ul li {
+    flex: 1;
+}
+
+.selectPrize,
+.selectPeopleNum,
+.visitNum {
+    width: 100%;
+    padding: 12px 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.selectPrize:hover,
+.selectPeopleNum:hover,
+.visitNum:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
+.selectPrize.active,
+.selectPeopleNum.active,
+.visitNum.active {
+    background: var(--pointColor);
+    color: #000;
+}
+
+/* 드롭다운 섹션 */
+.dropSelect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* 키워드 영역 */
+.keywordArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.keywordArea>div {
+    width: 100%;
+}
+
+.keywordArea input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.addToFile {
+    margin: 0 0 40px 0;
+}
+
+.fileUpload-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.file-info {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.fileUpload .file-button {
+    width: 200px;
+}
+
+
+/* 제출 버튼 */
+.submit-area {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background: var(--pointColor);
+    color: #000;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #06a0a2;
+    color: #fff;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .dropSelect {
+        grid-template-columns: 1fr;
+    }
+
+    .keywordArea {
+        grid-template-columns: 1fr;
+    }
+
+    .selectArea,
+    .selectPeople,
+    .visitPeople ul {
+        flex-wrap: wrap;
+    }
+
+    .selectArea li,
+    .selectPeople li,
+    .visitPeople ul li {
+        flex: 0 0 calc(50% - 5px);
+    }
+
+    .checkedagree {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

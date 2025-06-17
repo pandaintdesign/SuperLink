@@ -55,16 +55,15 @@
 
 
     .tag {
-        width: 120px;
+        width: 160px;
     }
 
-
-
-    .PersonalInfo .writeArea .telephone {
+    .PersonalInfo .writeArea .telephone,
+    .PersonalInfo .writeArea .companyCode {
         width: calc(600px / 3);
     }
 
-    .PersonalInfo .accountArea .duplicate {
+    .duplicate {
         width: 120px;
         height: 40px;
         padding: 5px;
@@ -190,23 +189,38 @@
         margin-top: 20px;
     }
 
-    .btn-submit {
-        background-color: #00FFD4;
+    .PersonalInfo .btn-submit {
+        width: 300px;
+        margin: 0 auto;
+        padding: 12px 30px;
         font-weight: 600;
         color: #000;
+        background-color: #00FFD4;
         border: none;
-        padding: 12px 30px;
         font-size: 16px;
         border-radius: 4px;
         cursor: pointer;
         transition: background-color 0.3s;
     }
 
-    .btn-submit:hover {
+    .PersonalInfo .btn-submit:hover {
         background-color: #00FFD4;
     }
 
-    .btn-submit:disabled {
-        background-color: #bdc3c7;
-        cursor: not-allowed;
+
+
+    /* error 메세지 */
+    .error-message,
+    .success-message {
+        font-size: 12px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .error-message {
+        color: red;
+    }
+
+    .success-message {
+        color: green;
     }

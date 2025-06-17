@@ -7,13 +7,109 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
     <link rel="stylesheet" href="./css/inquiry-form.css" />
+
+    <link rel="stylesheet" href="./css/quick.css" />
+    <link rel="stylesheet" href="./css/page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <!-- 헤더 -->
     <div id="header"></div>
 
-    <section></section>
+    <section id="inquiry" class="inquiry">
+      <div class="inquiry-wrap">
+        <h3>문의하기</h3>
+        <div class="inquiry-form">
+          <form action="" method="post" class="inquiryArea">
+            <div class="previous-campaigns">
+              <div class="inquiry-label">
+                         <label for="campaignOption">문의유형</label>
+              <label for="Required" class="Required">*</label>
+              </div>
+              <select name="campaignOption" id="campaignOption" class="dropBox">
+                <option value="">문의유형을 선택해주세요</option>
+                <option value="general">일반문의</option>
+                <option value="technical">기술문의</option>
+                <option value="account">계정문의</option>
+                <option value="payment">결제문의</option>
+                <option value="etc">기타</option>
+              </select>
+            </div>
+
+            <div class="campaign-details">
+              <div class="campaignInput Brand">
+                <div class="inquiry-label">
+                         <label for="campaignOption">제목</label>
+              <label for="Required" class="Required">*</label>
+              </div>
+                <input
+                  type="text"
+                  id="brandName"
+                  name="brandName"
+                  class="brandName"
+                  placeholder="문의 제목을 입력해 주세요"
+                  required
+                />
+              </div>
+              <div class="campaignInput productName">
+                <div class="inquiry-label">
+                         <label for="campaignOption">성명</label>
+              <label for="Required" class="Required">*</label>
+              </div>
+                <input
+                  type="text"
+                  id="productName"
+                  name="productName"
+                  class="productName"
+                  placeholder="작성자명을 입력해 주세요"
+                  required
+                />
+              </div>
+              <div class="campaignInput pageUrl">
+                <div class="inquiry-label">
+                         <label for="campaignOption">연락처</label>
+              <label for="Required" class="Required">*</label>
+              </div>
+                <input
+                  type="text"
+                  id="urlName"
+                  name="urlName"
+                  class="urlName"
+                  placeholder="연락처를 입력해 주세요"
+                  required
+                />
+              </div>
+            </div>
+
+          
+              <div class="addToFile">
+                <label for="fileUpload">첨부파일</label>
+                <input
+                  type="file"
+                  id="fileUpload"
+                  name="fileUpload"
+                  class="fileUpload-input"
+                />
+                <span class="file-info">최대 10MB 까지 업로드 가능</span>
+              </div>
+
+              <label for="reviewGuide">문의 내용</label>
+              <textarea
+                id="reviewGuide"
+                name="reviewGuide"
+                class="reviewGuide"
+                placeholder="문의하실 내용을 자세히 입력해주세요"
+                required
+              ></textarea>
+            </div>
+
+            <div class="submit-area">
+              <button type="submit" class="submit-btn">문의 등록하기</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- 푸터 -->
     <div id="footer"></div>
 

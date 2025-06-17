@@ -18,7 +18,7 @@
         <h3>회원가입</h3>
 
         <div class="signUpinfomation">
-          <form action="" method="post" class="PersonalInfo">
+          <form action="" method="post" id="PersonalInfo" class="PersonalInfo">
             <!-- 이름 -->
             <div class="writeArea nameArea">
               <div class="tag">
@@ -41,9 +41,39 @@
               </div>
               <input
                 type="text"
-                id="name"
+                id="companyName"
                 class="name"
                 name="companyName"
+                required
+              />
+            </div>
+            <!-- 사업자등록번호 -->
+            <div class="writeArea companyCodeArea">
+              <div class="tag">
+                <label for="companyCode">사업자등록번호</label>
+                <label for="Required" class="Required">*</label>
+              </div>
+              <input
+                type="text"
+                id="firstCode"
+                class="companyCode firstCode"
+                name="firstCode"
+                required
+              />
+              -
+              <input
+                type="text"
+                id="middleCode"
+                class="companyCode middleCode"
+                name="middleCode"
+                required
+              />
+              -
+              <input
+                type="text"
+                id="lastCode"
+                class="companyCode lastCode"
+                name="lastCode"
                 required
               />
             </div>
@@ -60,22 +90,27 @@
                 name="memberEmail"
                 required
               />
+              <button type="button" class="duplicate">인증하기</button>
             </div>
-            <!-- 비밀번호 -->
-            <div class="writeArea accountArea">
+            <!-- 인증번호 -->
+            <div class="writeArea checkNumber">
               <div class="tag">
-                <label for="id">아이디</label>
+                <label for="checkNumber">인증번호</label>
                 <label for="Required" class="Required">*</label>
               </div>
               <input
                 type="text"
-                id="account"
-                class="account"
-                name="account"
+                id="checkNumber"
+                class="checkNumber"
+                name="checkNumber"
+                placeholder="인증번호를 입력해 주세요"
                 required
               />
-              <button type="button" class="duplicate">중복확인</button>
+              <button type="button" class="duplicate Certification">
+                인증하기
+              </button>
             </div>
+
             <!-- 비밀번호 -->
             <div class="writeArea passWordArea">
               <div class="tag">
@@ -139,6 +174,9 @@
                 required
               />
             </div>
+            <button type="button" class="btn-submit" id="submit-btn" disabled>
+              회원가입
+            </button>
           </form>
 
           <div class="terms-container">
@@ -238,12 +276,6 @@
                 5. <span class="optional">[선택]</span> 이메일 수신 동의
               </label>
             </div>
-          </div>
-
-          <div class="btn-container">
-            <button type="button" class="btn-submit" id="submit-btn" disabled>
-              회원가입
-            </button>
           </div>
         </div>
       </div>

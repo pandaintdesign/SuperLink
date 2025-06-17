@@ -7,13 +7,41 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/command.css" />
     <link rel="stylesheet" href="./css/quality-metrics.css" />
+
+    <link rel="stylesheet" href="./css/quick.css" />
+    <link rel="stylesheet" href="./css/page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <!-- 헤더 -->
     <div id="header"></div>
 
-    <section></section>
+    <section id="metrics" class="metrics">
+      <div class="metrics_wrap">
+        <h3><span class="bloggerName">{블로거이름}</span>퀄리티 지표</h3>
+        <div class="Box-wrap">
+        <div class="metricsBox blogCount">
+          <h4><span class="brandName">{브랜드명}</span> 신상품 체험단</h4>
+          <ul>
+            <li>게시일 : <span class="startDate">0000.00.00</span></li>
+            <li>블로거 : <span class="bloggerName">{블로거이름}</span></li>
+            <li>방문자 수 : 일 평균<span class="visitCount">000명</span></li>
+            <li>URL : <a href="#" class="blogAdress">{블로그 url}</a></li>
+          </ul>
+        </div>
+        <div class="metricsBox lankData">
+            <h4><span class="brandName">{브랜드명}</span> 블로그 지수</h4>
+            <ul>
+              <li>포스팅 지수 : <span class="postingCount">00</span></li>
+              <li>메인키워드 랭킹 : <span class="mainLank">00</span></li>
+              <li>공감수 : <span class="likeCount">00</span></li>
+              <li>데이터 업데이트 : <span class="dateUpdate">0000.00.00 00:00</span></a></li>
+            </ul>
+      </div>
+      </div>
+      <button type="button" class="downloadBtn">리포트 다운로드</button>
+      </div>
+    </section>
     <!-- 푸터 -->
     <div id="footer"></div>
 
